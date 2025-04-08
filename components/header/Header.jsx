@@ -15,7 +15,7 @@ const menuItems = [
       { name: "Night life of Ahmedabad ", link: "/night-life-of-ahmedabad" },
       { name: "Go Shopping!", link: "/go-shopping" },
       { name: "Sports and games", link: "/sports-and-games" },
-      { name: " Ahmedabad  for kids", link: "" },
+      { name: " Ahmedabad  for kids", link: "/ahmedabad" },
       { name: "Explore charms of Heritage", link: "" },
     ],
   },
@@ -156,7 +156,7 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="py-5  bg-white border-b border-black text-black relative max-sm:sticky top-0  z-50 ">
+    <header className="sm:py-8 py-4  bg-white border-b border-black text-black relative max-sm:sticky top-0  z-50 ">
       <div className="main-container flex justify-between gap-5 items-center">
         <Link
           href="https://www.instagram.com/exploreheritageofindia"
@@ -171,7 +171,7 @@ export default function Header() {
           ref={menuRef}
           onMouseLeave={handleMouseLeave}
         >
-          <Link href="/" className="text-center mb-3 text-4xl font-semibold">
+          <Link href="/" className="text-center mb-3 text-5xl font-semibold">
             VISIT AMDAVAD
           </Link>
 
@@ -184,7 +184,7 @@ export default function Header() {
               >
                 <div
                   
-                  className={`px-3 py-2 text-lg font-medium rounded mb-2 ${
+                  className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
                     pathname === item.link ? "underline font-bold" : ""
                   }`}
                 >
@@ -259,14 +259,14 @@ export default function Header() {
         </div>
           )
         }
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-4 items-center">
           <button className=" text-base max-lg:hidden cursor-pointer">Login</button>
           <button className="flex gap-2 items-center cursor-pointer">
             <FaShoppingCart size={30} />
             <span className="text-base">0</span>
           </button>
           <button className="lg:hidden block cursor-pointer" onClick={handleOpen}>
-        <FaBars className="h-8 w-8" />
+        <FaBars className="h-5 w-5" />
         </button>
         </div>
        

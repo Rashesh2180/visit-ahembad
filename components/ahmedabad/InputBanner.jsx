@@ -1,8 +1,8 @@
 import React from "react";
 
-const NewsLetter = () => {
+const InputBanner = () => {
   return (
-    <div className="relative newsLetter-bg h-[500px]">
+    <div className="relative input-bg h-[500px]">
       <div className="absolute inset-0 bg-[rgba(0,0,0,0.1)] z-0"></div>
 
       <div className="relative z-10 text-white flex justify-center items-center flex-col h-full p-5">
@@ -18,4 +18,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default InputBanner;

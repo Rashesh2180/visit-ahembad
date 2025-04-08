@@ -45,7 +45,7 @@ const Activities = () => {
     <section className="bg-[#F1FFE0] sm:py-32 py-10">
       <div className="main-container">
         <h6 className="mb-5 text-3xl text-black font-semibold">
-          Explore the Nightlife of Ahmedabad
+        Popular nights out and activities
         </h6>
         {data.length > 0 && (
           <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
