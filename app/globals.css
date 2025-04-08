@@ -43,6 +43,42 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.sports-bg {
+  background-repeat: no-repeat;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737905863681-QLJ1CWY6CDC7RORF5L1T/unsplash-image-gywHscPZwMM.jpg?format=2500w");
+  background-size: cover;
+  background-position: 50% 72%;
+  position: relative;
+}
+.newsLetter-bg {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847885952-PYSL0PZB2JIMU9JZ9P99/20140301_Trade-151_0124-copy.jpg?format=2500w");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.sports-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
 .green-bg{
   background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737799324410-IALX8VDWV78UBNRIEXS5/unsplash-image-NQ6Lh81BTRs.jpg?format=2500w");
   background-size: 100% 100% ;

@@ -21,10 +21,7 @@ const HomePage = () => {
     <Featurre/>
     <GreenGreeting/>
     <LocationMap/>
-    {/* <VisitCity/> */}
-      {/* <HomeBanner/>
-      <Festival/>
-      <Events/> */}
+  
     </>
   )
 }

@@ -1,10 +1,10 @@
-import NightLife from '@/pages/nightLife/NightLife'
+import SportsGames from '@/pages/sportsGames/SportsGames'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-      <NightLife/>
+    <SportsGames/>
       
     </>
   )

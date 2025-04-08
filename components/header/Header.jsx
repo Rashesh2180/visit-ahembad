@@ -11,10 +11,10 @@ const menuItems = [
     name: "Things to do",
     link: "",
     dropdown: [
-      { name: "Discover what new", link: "/night-life-of-ahmedabad" },
-      { name: "Night life of Ahmedabad ", link: "" },
-      { name: "Go Shopping!", link: "" },
-      { name: "Sports and games", link: "" },
+      { name: "Discover what new", link: "/new-page-1" },
+      { name: "Night life of Ahmedabad ", link: "/night-life-of-ahmedabad" },
+      { name: "Go Shopping!", link: "/go-shopping" },
+      { name: "Sports and games", link: "/sports-and-games" },
       { name: " Ahmedabad  for kids", link: "" },
       { name: "Explore charms of Heritage", link: "" },
     ],
@@ -192,12 +192,12 @@ export default function Header() {
                 </div>
 
                 {item.dropdown && openDropdown === index && (
-                  <div className="absolute left-0 bg-[#a4a09d] text-white shadow-lg rounded-md z-10">
+                  <div className="absolute left-0 bg-[#a4a09d] overflow-hidden text-white shadow-lg rounded-md z-10">
                     {item.dropdown.map((subItem, subIndex) => (
                       <Link
                         key={subIndex}
                         href={subItem.link}
-                        className="block px-4 text-nowrap py-2 text-sm hover:bg-[#a20d31] hover:text-black"
+                        className="block px-4 text-nowrap py-2 text-base hover:bg-[#a20d31] hover:text-black"
                       >
                         {subItem.name}
                       </Link>
@@ -215,7 +215,7 @@ export default function Header() {
           ref={menuRef}
           onMouseLeave={handleMouseLeave}
         >
-          <button onClick={handleClose} className=" absolute top-5 right-5 text-red-600 text-xl font-bold">X</button>
+          <button onClick={handleClose} className=" absolute top-5 right-5 text-red-600 text-xl font-bold cursor-pointer">X</button>
           <Link href="/" className="text-center mb-3 text-4xl font-semibold">
             VISIT AMDAVAD
           </Link>
@@ -265,7 +265,7 @@ export default function Header() {
             <FaShoppingCart size={30} />
             <span className="text-base">0</span>
           </button>
-          <button className="lg:hidden block" onClick={handleOpen}>
+          <button className="lg:hidden block cursor-pointer" onClick={handleOpen}>
         <FaBars className="h-8 w-8" />
         </button>
         </div>
