@@ -254,14 +254,14 @@ export default function Header() {
               </div>
             ))}
           </div>
-          <button className=" text-base px-14 py-4 text-center bg-white text-black ">Login</button>
+          <button className=" cursor-pointer text-base px-14 py-4 text-center bg-white text-black ">Login</button>
 
         </div>
           )
         }
         <div className="flex gap-6 items-center">
-          <button className=" text-base max-lg:hidden">Login</button>
-          <button className="flex gap-2 items-center">
+          <button className=" text-base max-lg:hidden cursor-pointer">Login</button>
+          <button className="flex gap-2 items-center cursor-pointer">
             <FaShoppingCart size={30} />
             <span className="text-base">0</span>
           </button>
