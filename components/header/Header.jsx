@@ -1,1202 +1,276 @@
-import React from 'react'
+"use client";
+import Link from "next/link";
+import React, { useState, useRef, useEffect } from "react";
+import { FaInstagram } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
-const Header = () => {
-  return (
-    <div class="header-announcement-bar-wrapper">
-    <a href="#page" class="header-skip-link sqs-button-element--primary">
-      Skip to Content
-    </a>
+const menuItems = [
+  {
+    name: "Things to do",
+    link: "",
+    dropdown: [
+      { name: "Discover what new", link: "/night-life-of-ahmedabad" },
+      { name: "Night life of Ahmedabad ", link: "" },
+      { name: "Go Shopping!", link: "" },
+      { name: "Sports and games", link: "" },
+      { name: " Ahmedabad  for kids", link: "" },
+      { name: "Explore charms of Heritage", link: "" },
+    ],
+  },
+  {
+    name: "Sightseeing",
+    link: "/products",
+    dropdown: [
+      {
+        name: "Sightseeing in and around the Ahmedaba",
+        link: "/products/laptops",
+      },
+      { name: "Top attractions of Ahmedabad", link: "" },
+      { name: "Riverfront Scenes", link: "" },
+      {
+        name: "Join curated tours of Ahmedabad",
+        link: "",
+      },
+      { name: " Follow our itinearies", link: "" },
+      { name: "Ahmedabad Attraction Pass", link: "" },
+      { name: "Biodiversity", link: "" },
+    ],
+  },
+  {
+    name: "Explore Heritage",
+    link: "/products",
+    dropdown: [
+      {
+        name: " Historic city of Ahmedabad",
+        link: "/products/laptops",
+      },
+      { name: "Architecture of the city", link: "" },
+      { name: "Riverfront Scenes", link: "" },
+      {
+        name: "Iconic Monuments",
+        link: "",
+      },
+      { name: "Traditional Stepwells", link: "" },
+      { name: "Ahmedabad Attraction Pass", link: "" },
+      { name: "Biodiversity", link: "" },
+      { name: "Cultural Musuems", link: "" },
+      { name: "Guided Tours and Itinearies", link: "" },
+      { name: "Spirtituality", link: "" },
+    ],
+  },
+  {
+    name: "Eat & Drink",
+    link: "/products",
+    dropdown: [
+      {
+        name: "Explore the diversity of food",
+        link: "/products/laptops",
+      },
+      { name: "Traditional & Local Delicacies", link: "" },
+      { name: "Riverfront Scenes", link: "" },
+      {
+        name: "Unforgettable Experiences",
+        link: "",
+      },
+      { name: "Restaurants with a view", link: "" },
+      { name: "Themed Afternoon Teas", link: "" },
+      { name: "Pocket Friendly places", link: "" },
+      { name: " Sweet Tooth Diaries", link: "" },
+      {
+        name: " Curated Learning & Masterclasses",
+        link: "",
+      },
+    ],
+  },
+  {
+    name: "Art and Culture",
+    link: "/products",
+    dropdown: [
+      {
+        name: "Litreature",
+        link: "/products/laptops",
+      },
+      { name: "Theaters", link: "" },
+      { name: "Riverfront Scenes", link: "" },
+      {
+        name: "Movies",
+        link: "",
+      },
+      { name: "Dance", link: "" },
+      { name: "Music", link: "" },
+      { name: "Art Galleries", link: "" },
+    ],
+  },
+  {
+    name: "Information",
+    link: "",
+    dropdown: [
+      {
+        name: " Accomodations and Stays",
+        link: "",
+      },
+    ],
+  },
+  {
+    name: "SHOP",
+    link: "/shop",
+  },
+];
 
-    {/* <style>
-      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-      .header - blur - background {
+export default function Header() {
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [open,setOpen] = useState(false)
+  const menuRef = useRef(null);
+  const pathname = usePathname();
 
-          -webkit - backdrop - filter: blur(12px);
-      backdrop-filter: blur(12px);
-          
-          
-      }
+  const handleMouseEnter = (index) => {
+    setOpenDropdown(index);
+  };
+
+  const handleMouseLeave = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.relatedTarget)) {
+      setOpenDropdown(null);
+    }
+  };
+
+  const handleOpen = ()=>{
+    setOpen(true)
+
   }
-  </style> */}
-    <div
-      class="header-border"
-      data-header-style="solid"
-      data-header-border="true"
-      data-test="header-border"
-      style="
+  const handleClose = ()=>{
+    setOpen(false)
 
+  }
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
 
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [open]);
 
-  border-width: 1px 0px !important;
-
-
-
-
-"
-    ></div>
-    <div
-      class="header-dropshadow"
-      data-header-style="solid"
-      data-header-dropshadow="false"
-      data-test="header-dropshadow"
-      style=""
-    ></div>
-
-    <div>
-      <div
-        class="header-background-solid"
-        data-header-style="solid"
-        data-test="header-background-solid"
-        style="opacity: calc(100 * .01)"
-      ></div>
-    </div>
-
-    <div
-      class="header-inner container--fluid
-        header-layout--with-commerce
-       header-mobile-layout-logo-left-nav-right
-       header-layout-branding-center-nav-center
-      "
-      data-test="header-inner"
-    >
-      {/* <!-- Background --> */}
-      <div class="header-background theme-bg--primary"></div>
-
-      <div class="header-display-desktop" data-content-field="site-title">
-        {/* <style>
-              .top-bun,
-              .patty,
-              .bottom-bun {
-                  height: 1px;
-}
-          </style> */}
-
-        {/* <!-- Burger --> */}
-        <div
-          class="header-burger menu-overlay-has-visible-non-navigation-items preFade"
-          data-animation-role="header-element"
-          style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0s;"
+  return (
+    <header className="py-5  bg-white border-b border-black text-black relative max-sm:sticky top-0  z-50 ">
+      <div className="main-container flex justify-between gap-5 items-center">
+        <Link
+          href="https://www.instagram.com/exploreheritageofindia"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <button class="header-burger-btn burger" data-test="header-burger">
-            <span class="js-header-burger-open-title visually-hidden">
-              Open Menu
-            </span>
-            <span
-              hidden=""
-              class="js-header-burger-close-title visually-hidden"
-            >
-              Close Menu
-            </span>
-            <div class="burger-box">
-              <div class="burger-inner header-menu-icon-tripleLineHamburger">
-                <div class="top-bun"></div>
-                <div class="patty"></div>
-                <div class="bottom-bun"></div>
-              </div>
-            </div>
-          </button>
-        </div>
+          <FaInstagram size={25} />
+        </Link>
 
-        {/* <!-- Social --> */}
-
-        <div class="header-actions header-actions--left">
-          <div class="header-actions-action header-actions-action--social">
-            <a
-              class="icon icon--fill icon--sm  header-icon header-icon-border-shape-none header-icon-border-style-outline"
-              href="https://www.instagram.com/exploreheritageofindia"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <svg viewBox="23 23 64 64">
-                <use
-                  xlink:href="#instagram-unauth-icon"
-                  width="110"
-                  height="110"
-                ></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        {/* <!-- Title and nav wrapper --> */}
-        <div class="header-title-nav-wrapper">
-          {/* <!-- Title --> */}
-
-          <div
-            class="header-title preFade fadeIn"
-            data-animation-role="header-element"
-            style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0103448s;"
-          >
-            <div class="header-title-text">
-              <a
-                id="site-title"
-                href="/"
-                data-animation-role="header-element"
-                class="preFade fadeIn"
-                style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0206897s;"
-              >
-                VISIT AMDAVAD
-              </a>
-            </div>
-          </div>
-
-          {/* <!-- Nav --> */}
-          <div class="header-nav">
-            <div class="header-nav-wrapper">
-              <nav class="header-nav-list">
-                <div class="header-nav-item header-nav-item--folder header-nav-item--active">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/things-to-do-1"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    aria-current="true"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0310345s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Things to do
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item header-nav-folder-item--active">
-                      <a href="/new-page-1" aria-current="page">
-                        <span class="header-nav-folder-item-content">
-                          Discover what's new
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/night-life-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Night life of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/go-shopping">
-                        <span class="header-nav-folder-item-content">
-                          Go Shopping!
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/sports-and-games">
-                        <span class="header-nav-folder-item-content">
-                          Sports and games
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Ahmedabad for kids
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/historic-city-of-ahmedabad-1">
-                        <span class="header-nav-folder-item-content">
-                          Explore charms of Heritage
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/curated-experiences">
-                        <span class="header-nav-folder-item-content">
-                          Curated Experiences
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/548cf1b2-0e49-40ce-8159-2eff9c4013c1"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0413793s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Sightseeing
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/sightseeing-in-and-around-the-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Sightseeing in and around the Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/top-attractions-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Top attractions of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/riverfront-scenes">
-                        <span class="header-nav-folder-item-content">
-                          Riverfront Scenes
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/join-curated-tours-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Join curated tours of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/new-page">
-                        <span class="header-nav-folder-item-content">
-                          Follow our itinearies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/ahmedabad-attraction-pass">
-                        <span class="header-nav-folder-item-content">
-                          Ahmedabad Attraction Pass
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/biodiversity">
-                        <span class="header-nav-folder-item-content">
-                          Biodiversity
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/explore-architecture-and-heritage"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0517241s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Explore Heritage
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/historic-city-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Historic city of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/architecture-of-the-city">
-                        <span class="header-nav-folder-item-content">
-                          Architecture of the city
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/iconic-monuments">
-                        <span class="header-nav-folder-item-content">
-                          Iconic Monuments
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/traditional-stepwells">
-                        <span class="header-nav-folder-item-content">
-                          Traditional Stepwells
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/cultural-musuems">
-                        <span class="header-nav-folder-item-content">
-                          Cultural Musuems
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/guided-tours-and-itinearies">
-                        <span class="header-nav-folder-item-content">
-                          Guided Tours and Itinearies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/spirtituality">
-                        <span class="header-nav-folder-item-content">
-                          Spirtituality
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/eat-drink"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.062069s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Eat &amp; Drink
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/eat-and-drink">
-                        <span class="header-nav-folder-item-content">
-                          Explore the diversity of food
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/new-page-3">
-                        <span class="header-nav-folder-item-content">
-                          Traditional &amp; Local Delicacies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/unforgettable-experiences">
-                        <span class="header-nav-folder-item-content">
-                          Unforgettable Experiences
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/restaurants-with-a-view">
-                        <span class="header-nav-folder-item-content">
-                          Restaurants with a view
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/themed-afternoon-teas">
-                        <span class="header-nav-folder-item-content">
-                          Themed Afternoon Teas
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/pocket-friendly-places">
-                        <span class="header-nav-folder-item-content">
-                          Pocket Friendly places
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/sweet-tooth-diaries">
-                        <span class="header-nav-folder-item-content">
-                          Sweet Tooth Diaries
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/curated-learning">
-                        <span class="header-nav-folder-item-content">
-                          Curated Learning &amp; Masterclasses
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/art-and-culture"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0724138s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Art and Culture
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/litreature">
-                        <span class="header-nav-folder-item-content">
-                          Litreature
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/theaters">
-                        <span class="header-nav-folder-item-content">
-                          Theaters
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/movies">
-                        <span class="header-nav-folder-item-content">
-                          Movies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/dance">
-                        <span class="header-nav-folder-item-content">
-                          Dance
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/music">
-                        <span class="header-nav-folder-item-content">
-                          Music
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/art-galleries">
-                        <span class="header-nav-folder-item-content">
-                          Art Galleries
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade fadeIn"
-                    href="/information"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0827586s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Information
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/services-6-1">
-                        <span class="header-nav-folder-item-content">
-                          Accomodations and Stays
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--collection">
-                  <a
-                    href="/shop"
-                    data-animation-role="header-element"
-                    class="preFade fadeIn"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.0931034s;"
-                  >
-                    SHOP
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        {/* <!-- Actions --> */}
-        <div class="header-actions header-actions--right">
-          <div
-            class="user-accounts-link header-nav-item header-nav-item--collection customerAccountLoginDesktop preFade fadeIn loaded"
-            data-controller="UserAccountLink"
-            data-animation-role="header-element"
-            data-controllers-bound="UserAccountLink"
-            style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.103448s;"
-          >
-            <a
-              class="user-accounts-text-link header-nav-item preFade fadeIn"
-              href="#"
-              data-animation-role="header-element"
-              style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.113793s;"
-            >
-              <span class="unauth">Login</span>
-            </a>
-          </div>
-
-          <div class="showOnMobile">
-            <div class="header-actions-action header-actions-action--cart">
-              <a
-                href="/cart"
-                class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart header-icon show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline sqs-template-integrated-shopping-cart"
-                data-test="continue-to-cart"
-                aria-label="0 items in cart"
-              >
-                <span class="Cart-inner">
-                  <svg
-                    class="icon icon--cart"
-                    width="61"
-                    height="49"
-                    viewBox="0 0 61 49"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z"
-                    ></path>
-                    <path d="M18.589 35H49.7083L60 13H16L18.589 35Z"></path>
-                    <path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z"></path>
-                    <path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z"></path>
-                  </svg>
-
-                  <div class="icon-cart-quantity">
-                    <span class="cart-quantity-container">
-                      <span class="sqs-cart-quantity">0</span>
-                    </span>
-                  </div>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <div class="showOnDesktop">
-            <div class="header-actions-action header-actions-action--cart">
-              <a
-                href="/cart"
-                class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart header-icon show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline sqs-template-integrated-shopping-cart"
-                data-test="continue-to-cart"
-                aria-label="0 items in cart"
-              >
-                <span class="Cart-inner">
-                  <svg
-                    class="icon icon--cart"
-                    width="61"
-                    height="49"
-                    viewBox="0 0 61 49"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z"
-                    ></path>
-                    <path d="M18.589 35H49.7083L60 13H16L18.589 35Z"></path>
-                    <path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z"></path>
-                    <path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z"></path>
-                  </svg>
-
-                  <div class="icon-cart-quantity">
-                    <span class="cart-quantity-container">
-                      <span class="sqs-cart-quantity">0</span>
-                    </span>
-                  </div>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-display-mobile" data-content-field="site-title">
-        {/* <!-- Social --> */}
-
-        <div class="header-actions header-actions--left">
-          <div class="header-actions-action header-actions-action--social">
-            <a
-              class="icon icon--fill icon--sm  header-icon header-icon-border-shape-none header-icon-border-style-outline"
-              href="https://www.instagram.com/exploreheritageofindia"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <svg viewBox="23 23 64 64">
-                <use
-                  xlink:href="#instagram-unauth-icon"
-                  width="110"
-                  height="110"
-                ></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        {/* <!-- Title and nav wrapper --> */}
-        <div class="header-title-nav-wrapper">
-          {/* <!-- Title --> */}
-
-          <div
-            class="header-title preFade"
-            data-animation-role="header-element"
-            style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.124138s;"
-          >
-            <div class="header-title-text">
-              <a
-                id="site-title"
-                href="/"
-                data-animation-role="header-element"
-                class="preFade"
-                style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.134483s;"
-              >
-                VISIT AMDAVAD
-              </a>
-            </div>
-          </div>
-
-          {/* <!-- Nav --> */}
-          <div class="header-nav">
-            <div class="header-nav-wrapper">
-              <nav class="header-nav-list">
-                <div class="header-nav-item header-nav-item--folder header-nav-item--active">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/things-to-do-1"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    aria-current="true"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.144828s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Things to do
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item header-nav-folder-item--active">
-                      <a href="/new-page-1" aria-current="page">
-                        <span class="header-nav-folder-item-content">
-                          Discover what's new
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/night-life-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Night life of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/go-shopping">
-                        <span class="header-nav-folder-item-content">
-                          Go Shopping!
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/sports-and-games">
-                        <span class="header-nav-folder-item-content">
-                          Sports and games
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Ahmedabad for kids
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/historic-city-of-ahmedabad-1">
-                        <span class="header-nav-folder-item-content">
-                          Explore charms of Heritage
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/curated-experiences">
-                        <span class="header-nav-folder-item-content">
-                          Curated Experiences
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/548cf1b2-0e49-40ce-8159-2eff9c4013c1"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.155172s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Sightseeing
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/sightseeing-in-and-around-the-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Sightseeing in and around the Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/top-attractions-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Top attractions of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/riverfront-scenes">
-                        <span class="header-nav-folder-item-content">
-                          Riverfront Scenes
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/join-curated-tours-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Join curated tours of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/new-page">
-                        <span class="header-nav-folder-item-content">
-                          Follow our itinearies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/ahmedabad-attraction-pass">
-                        <span class="header-nav-folder-item-content">
-                          Ahmedabad Attraction Pass
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/biodiversity">
-                        <span class="header-nav-folder-item-content">
-                          Biodiversity
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/explore-architecture-and-heritage"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.165517s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Explore Heritage
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/historic-city-of-ahmedabad">
-                        <span class="header-nav-folder-item-content">
-                          Historic city of Ahmedabad
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/architecture-of-the-city">
-                        <span class="header-nav-folder-item-content">
-                          Architecture of the city
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/iconic-monuments">
-                        <span class="header-nav-folder-item-content">
-                          Iconic Monuments
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/traditional-stepwells">
-                        <span class="header-nav-folder-item-content">
-                          Traditional Stepwells
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/cultural-musuems">
-                        <span class="header-nav-folder-item-content">
-                          Cultural Musuems
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/guided-tours-and-itinearies">
-                        <span class="header-nav-folder-item-content">
-                          Guided Tours and Itinearies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/spirtituality">
-                        <span class="header-nav-folder-item-content">
-                          Spirtituality
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/eat-drink"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.175862s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Eat &amp; Drink
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/eat-and-drink">
-                        <span class="header-nav-folder-item-content">
-                          Explore the diversity of food
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/new-page-3">
-                        <span class="header-nav-folder-item-content">
-                          Traditional &amp; Local Delicacies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/unforgettable-experiences">
-                        <span class="header-nav-folder-item-content">
-                          Unforgettable Experiences
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/restaurants-with-a-view">
-                        <span class="header-nav-folder-item-content">
-                          Restaurants with a view
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/themed-afternoon-teas">
-                        <span class="header-nav-folder-item-content">
-                          Themed Afternoon Teas
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/pocket-friendly-places">
-                        <span class="header-nav-folder-item-content">
-                          Pocket Friendly places
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/sweet-tooth-diaries">
-                        <span class="header-nav-folder-item-content">
-                          Sweet Tooth Diaries
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/curated-learning">
-                        <span class="header-nav-folder-item-content">
-                          Curated Learning &amp; Masterclasses
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/art-and-culture"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.186207s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Art and Culture
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/litreature">
-                        <span class="header-nav-folder-item-content">
-                          Litreature
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/theaters">
-                        <span class="header-nav-folder-item-content">
-                          Theaters
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/movies">
-                        <span class="header-nav-folder-item-content">
-                          Movies
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/dance">
-                        <span class="header-nav-folder-item-content">
-                          Dance
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/music">
-                        <span class="header-nav-folder-item-content">
-                          Music
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="header-nav-folder-item">
-                      <a href="/art-galleries">
-                        <span class="header-nav-folder-item-content">
-                          Art Galleries
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--folder">
-                  <a
-                    class="header-nav-folder-title preFade"
-                    href="/information"
-                    tabindex="-1"
-                    data-animation-role="header-element"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.196552s;"
-                  >
-                    <span class="header-nav-folder-title-text">
-                      Information
-                    </span>
-                  </a>
-                  <div class="header-nav-folder-content">
-                    <div class="header-nav-folder-item">
-                      <a href="/services-6-1">
-                        <span class="header-nav-folder-item-content">
-                          Accomodations and Stays
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="header-nav-item header-nav-item--collection">
-                  <a
-                    href="/shop"
-                    data-animation-role="header-element"
-                    class="preFade"
-                    style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.206897s;"
-                  >
-                    SHOP
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        {/* <!-- Actions --> */}
-        <div class="header-actions header-actions--right">
-          <div
-            class="user-accounts-link header-nav-item header-nav-item--collection customerAccountLoginDesktop preFade loaded"
-            data-controller="UserAccountLink"
-            data-animation-role="header-element"
-            data-controllers-bound="UserAccountLink"
-            style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.217241s;"
-          >
-            <a
-              class="user-accounts-text-link header-nav-item preFade"
-              href="#"
-              data-animation-role="header-element"
-              style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.227586s;"
-            >
-              <span class="unauth">Login</span>
-            </a>
-          </div>
-
-          <div class="showOnMobile">
-            <div class="header-actions-action header-actions-action--cart">
-              <a
-                href="/cart"
-                class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart header-icon show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline sqs-template-integrated-shopping-cart"
-                data-test="continue-to-cart"
-                aria-label="0 items in cart"
-              >
-                <span class="Cart-inner">
-                  <svg
-                    class="icon icon--cart"
-                    width="61"
-                    height="49"
-                    viewBox="0 0 61 49"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z"
-                    ></path>
-                    <path d="M18.589 35H49.7083L60 13H16L18.589 35Z"></path>
-                    <path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z"></path>
-                    <path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z"></path>
-                  </svg>
-
-                  <div class="icon-cart-quantity">
-                    <span class="cart-quantity-container">
-                      <span class="sqs-cart-quantity">0</span>
-                    </span>
-                  </div>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <div class="showOnDesktop">
-            <div class="header-actions-action header-actions-action--cart">
-              <a
-                href="/cart"
-                class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart header-icon show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline sqs-template-integrated-shopping-cart"
-                data-test="continue-to-cart"
-                aria-label="0 items in cart"
-              >
-                <span class="Cart-inner">
-                  <svg
-                    class="icon icon--cart"
-                    width="61"
-                    height="49"
-                    viewBox="0 0 61 49"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z"
-                    ></path>
-                    <path d="M18.589 35H49.7083L60 13H16L18.589 35Z"></path>
-                    <path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z"></path>
-                    <path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z"></path>
-                  </svg>
-
-                  <div class="icon-cart-quantity">
-                    <span class="cart-quantity-container">
-                      <span class="sqs-cart-quantity">0</span>
-                    </span>
-                  </div>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* <style>
-              .top-bun,
-              .patty,
-              .bottom-bun {
-                  height: 1px;
-}
-          </style> */}
-
-        {/* <!-- Burger --> */}
         <div
-          class="header-burger menu-overlay-has-visible-non-navigation-items preFade"
-          data-animation-role="header-element"
-          style="transition-timing-function: ease; transition-duration: 0.4s; transition-delay: 0.237931s;"
+          className="lg:flex hidden flex-col items-center"
+          ref={menuRef}
+          onMouseLeave={handleMouseLeave}
         >
-          <button class="header-burger-btn burger" data-test="header-burger">
-            <span class="js-header-burger-open-title visually-hidden">
-              Open Menu
-            </span>
-            <span
-              hidden=""
-              class="js-header-burger-close-title visually-hidden"
-            >
-              Close Menu
-            </span>
-            <div class="burger-box">
-              <div class="burger-inner header-menu-icon-tripleLineHamburger">
-                <div class="top-bun"></div>
-                <div class="patty"></div>
-                <div class="bottom-bun"></div>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  )
-}
+          <Link href="/" className="text-center mb-3 text-4xl font-semibold">
+            VISIT AMDAVAD
+          </Link>
 
-export default Header
+          <div className="flex items-center  gap-x-5 gap-y-3 flex-wrap justify-center">
+            {menuItems.map((item, index) => (
+              <div
+                key={index}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(index)}
+              >
+                <div
+                  
+                  className={`px-3 py-2 text-lg font-medium rounded mb-2 ${
+                    pathname === item.link ? "underline font-bold" : ""
+                  }`}
+                >
+                  {item.name}
+                </div>
+
+                {item.dropdown && openDropdown === index && (
+                  <div className="absolute left-0 bg-[#a4a09d] text-white shadow-lg rounded-md z-10">
+                    {item.dropdown.map((subItem, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={subItem.link}
+                        className="block px-4 text-nowrap py-2 text-sm hover:bg-[#a20d31] hover:text-black"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        {
+          open && (
+            <div
+          className="flex flex-col left-0 top-0 z-10 gap-20 justify-center items-center absolute bg-[rgba(0,0,0,0.9)] text-white w-full h-screen"
+          ref={menuRef}
+          onMouseLeave={handleMouseLeave}
+        >
+          <button onClick={handleClose} className=" absolute top-5 right-5 text-red-600 text-xl font-bold">X</button>
+          <Link href="/" className="text-center mb-3 text-4xl font-semibold">
+            VISIT AMDAVAD
+          </Link>
+
+          <div className="flex items-center  gap-y-5 flex-col justify-center mb-10">
+            {menuItems.map((item, index) => (
+              <div
+                key={index}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(index)}
+              >
+                <Link
+                  href={item.link}
+                  className={`px-3 py-2 text-lg font-medium rounded mb-2 ${
+                    pathname === item.link ? "underline font-bold" : ""
+                  }`}
+                >
+                  {item.name}
+                </Link>
+
+                {item.dropdown && openDropdown === index && (
+                  <div className="absolute left-0 bg-[#a4a09d] text-white shadow-lg rounded-md z-10">
+                    {item.dropdown.map((subItem, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={subItem.link}
+                        onClick={handleClose}
+
+                        className="block px-4 text-nowrap py-2 text-sm hover:bg-[#a20d31] hover:text-black"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <button className=" text-base px-14 py-4 text-center bg-white text-black ">Login</button>
+
+        </div>
+          )
+        }
+        <div className="flex gap-6 items-center">
+          <button className=" text-base max-lg:hidden">Login</button>
+          <button className="flex gap-2 items-center">
+            <FaShoppingCart size={30} />
+            <span className="text-base">0</span>
+          </button>
+          <button className="lg:hidden block" onClick={handleOpen}>
+        <FaBars className="h-8 w-8" />
+        </button>
+        </div>
+       
+      </div>
+    </header>
+  );
+}
