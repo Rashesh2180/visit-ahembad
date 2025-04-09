@@ -17,6 +17,8 @@ const menuItems = [
       { name: "Sports and games", link: "/sports-and-games" },
       { name: " Ahmedabad  for kids", link: "/ahmedabad" },
       { name: "Explore charms of Heritage", link: "" },
+      { name: "Curated experiences", link: "/curated-experiences" },
+
     ],
   },
   {
@@ -24,8 +26,8 @@ const menuItems = [
     link: "/products",
     dropdown: [
       {
-        name: "Sightseeing in and around the Ahmedaba",
-        link: "/products/laptops",
+        name: "Sightseeing in and around the Ahmedabad",
+        link: "/sightseeing-in-and-around-the-ahmedabad",
       },
       { name: "Top attractions of Ahmedabad", link: "" },
       { name: "Riverfront Scenes", link: "" },
