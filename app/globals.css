@@ -31,6 +31,7 @@
   }
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -41,6 +42,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.iconic-bg{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1739126092996-8XAUUK7W68L5RBN3XLOD/unsplash-image-d6nD_5Kn5cw.jpg?format=1500w");
 }
 .shape-bg{
   background-image: url("/assets/svg/shape.svg");

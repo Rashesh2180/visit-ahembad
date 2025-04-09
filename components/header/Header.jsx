@@ -33,7 +33,7 @@ const menuItems = [
       { name: "Riverfront Scenes", link: "" },
       {
         name: "Join curated tours of Ahmedabad",
-        link: "",
+        link: "/join-curated-tours-of-ahmedabad",
       },
       { name: " Follow our itinearies", link: "" },
       { name: "Ahmedabad Attraction Pass", link: "" },
@@ -52,9 +52,9 @@ const menuItems = [
       { name: "Riverfront Scenes", link: "" },
       {
         name: "Iconic Monuments",
-        link: "",
+        link: "/iconic-monuments",
       },
-      { name: "Traditional Stepwells", link: "" },
+      { name: "Traditional Stepwells", link: "/traditional-stepwells" },
       { name: "Ahmedabad Attraction Pass", link: "" },
       { name: "Biodiversity", link: "" },
       { name: "Cultural Musuems", link: "" },
