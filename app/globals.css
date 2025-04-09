@@ -3,7 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --lightYellow:#F1FFE0
+  --lightYellow:#F1FFE0;
+  --purple:#EFEBFA;
+  --teal:"#5B767B"
 }
 
 @theme inline {
@@ -21,7 +23,7 @@
   
 }
 .section-title{
-  @apply sm:text-5xl text-3xl text-black font-semibold leading-10
+  @apply sm:text-5xl text-3xl text-black font-semibold leading-[1.2]
 }
 @media (prefers-color-scheme: dark) {
   :root {

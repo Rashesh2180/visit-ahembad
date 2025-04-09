@@ -64,11 +64,11 @@ const menuItems = [
   },
   {
     name: "Eat & Drink",
-    link: "/products",
+    link: "",
     dropdown: [
       {
         name: "Explore the diversity of food",
-        link: "/products/laptops",
+        link: "/eat-and-drink",
       },
       { name: "Traditional & Local Delicacies", link: "" },
       { name: "Riverfront Scenes", link: "" },
