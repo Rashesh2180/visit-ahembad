@@ -59,7 +59,7 @@ const menuItems = [
       { name: "Biodiversity", link: "" },
       { name: "Cultural Musuems", link: "" },
       { name: "Guided Tours and Itinearies", link: "" },
-      { name: "Spirtituality", link: "" },
+      { name: "Spirtituality", link: "/spirtituality" },
     ],
   },
   {
