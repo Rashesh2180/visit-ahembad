@@ -1,25 +1,24 @@
-import Events from '@/components/home/Events'
 import Explore from '@/components/home/Explore'
 import Featurre from '@/components/home/Feature'
-import Festival from '@/components/home/Festival'
 import GreenGreeting from '@/components/home/GreenGreeting'
 import HeritageCity from '@/components/home/HeritageCity'
 import HeroBanner from '@/components/home/HeroBanner'
-import HomeBanner from '@/components/home/HomeBanner'
 import LocationMap from '@/components/home/LocationMap'
 import MustSeePlace from '@/components/home/MustSeePlace'
-import VisitCity from '@/components/home/VisitCity'
 import React from 'react'
+import jsonData from "../../public/assets/text/en.json"
 
 const HomePage = () => {
+
+  const homeData = jsonData?.home
   return (
     <>
-    <HeroBanner/>
-    <HeritageCity/>
-    <MustSeePlace/>
-    <Explore/>
-    <Featurre/>
-    <GreenGreeting/>
+    <HeroBanner heroData={homeData?.hero}/>
+    <HeritageCity heritageData = {homeData?.heritageCity}/>
+    <MustSeePlace mustSeedata = {homeData?.mustSee}/>
+    <Explore exploreData = {homeData?.explore}/>
+    <Featurre featureData = {homeData?.feature}/>
+    <GreenGreeting GreetingData={homeData?.GreenGreeting} generalData={jsonData?.general}/>
     <LocationMap/>
   
     </>

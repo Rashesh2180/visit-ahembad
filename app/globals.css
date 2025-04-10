@@ -70,12 +70,12 @@ body {
   background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738044511310-OWHZSLBU9NGA7205LA3Q/unsplash-image-OFzwexMETt8.jpg?format=2500w");
 
 }
-/* .input-bg {
+.input-bg {
   background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737814285162-UAD6REJTGM4FI79DBPF1/unsplash-image-M-1ojsN__YM.jpg?format=1500w");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-} */
+}
 .ahemdbad-banner-bg{
   background-repeat: no-repeat;
   background-image: url("https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737800807812-B9TMPDNQ9T3ZHUNPOIVB/unsplash-image-rF0RL-cOycs.jpg?format=1500w");
@@ -125,7 +125,7 @@ body {
 .scroll-text {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 40s linear infinite;
 }
 
 @keyframes scroll-left {

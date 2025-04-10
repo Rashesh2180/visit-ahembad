@@ -1,13 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const HeritageCity = () => {
+const HeritageCity = ({heritageData}) => {
   return (
     <div className="main-container pt-5 pb-24">
       <div className="scroll-container mb-2">
         <h5 className="scroll-text text-3xl text-black uppercase font-bold tracking-wide">
-          --- unesco world heritage city --- unesco world heritage city ---
-          unesco world heritage city
+         {heritageData.title}
+         {heritageData.title}
+         {heritageData.title}
+
         </h5>
       </div>
       <div className="flex gap-5 max-lg:flex-wrap max-sm:flex-col">
@@ -22,8 +24,8 @@ const HeritageCity = () => {
           className="max-sm:w-full max-sm:h-48"
         />
         <div className="flex-1 bg-[#452A21] h-[238px] w-full p-4 flex max-md:py-14  justify-center items-center">
-          <h6 className="lg:text-5xl text-3xl font-bold text-[#d9f7c4]">
-            AHMEDABAD’S <br /> VISITOR GUIDE
+          <h6 className="lg:text-5xl text-3xl text-center font-bold text-[#d9f7c4]">
+          {heritageData?.card2}
           </h6>
         </div>
         <div className="flex-1 bg-[#F8DDDD]  p-4 h-[238px] min-w-[320px] max-md:py-14  flex gap-5 items-center justify-center">
@@ -37,8 +39,8 @@ const HeritageCity = () => {
             width={125}
             className="max-xl:w-20 max-xl:h-20 max-sm:h-10 max-sm:w-10"
           />
-          <span className="lg:text-3xl text-2xl text-black font-semibold">
-            INSPIRING 2 CR <br /> PEOPLE EVERY YEAR{" "}
+          <span className="lg:text-3xl text-2xl max-w-84 text-black font-semibold">
+          {heritageData?.card3}
           </span>
         </div>
       </div>

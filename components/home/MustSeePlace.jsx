@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-const MustSeePlace = () => {
+
+const MustSeePlace = ({ mustSeedata }) => {
   return (
     <section className=" py-20 bg-black ">
       <div className="main-container ">
-        <h6 className="font-semibold text-2xl sm:mb-20 mb-8 text-white">
-          Must See places of Ahmedabad
+        <h6 className="section-title sm:mb-20 mb-8 !text-white">
+          {mustSeedata?.title}
         </h6>
         <div className="flex flex-wrap gap-3 ">
           <div className="relative flex-1 min-w-2xs ">
@@ -21,7 +22,7 @@ const MustSeePlace = () => {
               className="w-full mb-5 sm:h-[304px] h-48"
             />
             <h6 className="font-medium text-lg  text-white ">
-              <strong>Atal Bridge</strong>- Gujarat’s longest Bridge
+            {mustSeedata?.card1}
             </h6>
           </div>
           <div className="relative flex-1 min-w-2xs ">
@@ -36,7 +37,8 @@ const MustSeePlace = () => {
               className="w-full mb-5 sm:h-[304px] h-48"
             />
             <h6 className="font-medium text-lg  text-white ">
-              <strong>Motera Stadium</strong>- World’s Larget Cricket Stadium
+            {mustSeedata?.card2}
+
             </h6>
           </div>
           <div className="relative flex-1 min-w-2xs ">
@@ -51,7 +53,7 @@ const MustSeePlace = () => {
               className="w-full mb-5 sm:h-[304px] h-48 "
             />
             <h6 className="font-medium text-lg  text-white ">
-              <strong>Aquatic Gallery</strong> - Gujarat’s largest Acquarium
+            {mustSeedata?.card3}
             </h6>
           </div>
         </div>

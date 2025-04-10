@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Festival = () => {
+const Festival = ({festivalData}) => {
   return (
     <div className="main-container md:py-32 py-20">
-      <h6 className="font-semibold text-3xl mb-1 text-black">
-        Music & Entertainment
+      <h6 className="section-title mb-10">
+        {festivalData?.title}
       </h6>
       <div className="grid gap-5 sm:grid-cols-3 grid-cols-1">
         <a target="_blank" href="https://allevents.in/ahmedabad/samraga-music-festival/80002133531197?aff=u1gjbz&ref=featured-eventlist" className="relative">

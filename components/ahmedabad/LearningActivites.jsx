@@ -2,32 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const data = [
-  {
-    id: 1,
-    title: "Learn about the Independence History of Ahmedabad ",
-    desc:"A guided tour at the Sardar Vallabhbhai Patel’s Home",
-    img: "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/2ef1c555-fae7-4d7b-a362-ff82419a1547/IMG_20220807_091358.jpg?format=500w",
-  },
-  {
-    id: 2,
-    desc:"A guided tour at the Sardar Vallabhbhai Patel Museum",
 
-    title: "Learn about the Independence Struggle of India ",
-    img: "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/de851a11-661a-42c2-983e-1d6b137fa779/sardar-vallabhbhai-patel-national-museum-ahmedabad-gujarat-attr-about.jpeg?format=500w",
-  }
-];
-
-const LearningActivites = () => {
+const LearningActivites = ({data}) => {
   return (
     <section className="bg-[#F1FFE0] sm:py-20 py-10">
       <div className="main-container">
         <h6 className="sm:mb-20 mb-5 sm:text-5xl text-3xl text-black font-semibold">
-        Learning activties for kids
+        {data?.title}
         </h6>
-        {data.length > 0 && (
+        {data?.data?.length > 0 && (
           <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-            {data.map((ele) => (
+            {data?.data?.map((ele) => (
               <div className="h-full w-full flex flex-col gap-3 items-start" key={ele.id}>
                 <Image
                   src={ele.img}

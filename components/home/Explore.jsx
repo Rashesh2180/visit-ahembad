@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-const Explore = () => {
+const Explore = ({exploreData}) => {
   return (
     <div className="">
       <h6 className="text-center text-5xl text-black font-semibold sm:py-20 py-10">
-        Explore
+      {exploreData?.title}
       </h6>
       <div className="bg-[#5B767B] w-full sm:py-32 py-14">
         <div className="flex flex-wrap gap-5 main-container ">
@@ -20,7 +20,7 @@ const Explore = () => {
               className="w-full mb-10 sm:h-[304px] h-48"
             />
             <h6 className="font-medium text-lg  text-white text-center ">
-              <strong>Thol Bird Sanctury</strong>
+              <strong>{exploreData?.card1}</strong>
             </h6>
           </div>
           <div className="relative flex-1 min-w-2xs ">
@@ -35,7 +35,7 @@ const Explore = () => {
               className="w-full mb-10 sm:h-[304px] h-48"
             />
             <h6 className="font-medium text-lg  text-white text-center ">
-              <strong>Kankaria Lake</strong>
+              <strong>{exploreData?.card2}</strong>
             </h6>
           </div>
           <div className="relative flex-1 min-w-2xs ">
@@ -50,7 +50,7 @@ const Explore = () => {
               className="w-full mb-10 sm:h-[304px] h-48 "
             />
             <h6 className="font-medium text-lg  text-white text-center ">
-              <strong>Nal Sarovar Bird Sanctuary</strong>
+              <strong>{exploreData?.card3}</strong>
             </h6>
           </div>
         </div>

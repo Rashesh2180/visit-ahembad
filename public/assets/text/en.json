@@ -1,0 +1,433 @@
+{
+  "general": {
+    "readMore": "read more",
+    "noData": "No data Found",
+    "visitNow": "Visit Now",
+    "signup": "Sign Up",
+    "startExploring": "Start Exploring"
+  },
+  "header": {
+    "login": "Login",
+    "heading": "VISIT AMDAVAD",
+    "menuItems": [
+      {
+        "name": "Things to do",
+        "link": "",
+        "dropdown": [
+          { "name": "Discover what new", "link": "/new-page-1" },
+          {
+            "name": "Night life of Ahmedabad",
+            "link": "/night-life-of-ahmedabad"
+          },
+          { "name": "Go Shopping!", "link": "/go-shopping" },
+          { "name": "Sports and games", "link": "/sports-and-games" },
+          { "name": "Ahmedabad for kids", "link": "/ahmedabad" },
+          {
+            "name": "Explore charms of Heritage",
+            "link": "/historic-city-of-ahmedabad-1"
+          },
+          { "name": "Curated experiences", "link": "/curated-experiences" }
+        ]
+      },
+      {
+        "name": "Sightseeing",
+        "link": "/products",
+        "dropdown": [
+          {
+            "name": "Sightseeing in and around Ahmedabad",
+            "link": "/sightseeing-in-and-around-the-ahmedabad"
+          },
+          { "name": "Top attractions of Ahmedabad", "link": "" },
+          { "name": "Riverfront Scenes", "link": "" },
+          {
+            "name": "Join curated tours of Ahmedabad",
+            "link": "/join-curated-tours-of-ahmedabad"
+          },
+          { "name": "Follow our itineraries", "link": "" },
+          { "name": "Ahmedabad Attraction Pass", "link": "" },
+          { "name": "Biodiversity", "link": "" }
+        ]
+      },
+      {
+        "name": "Explore Heritage",
+        "link": "/products",
+        "dropdown": [
+          {
+            "name": "Historic city of Ahmedabad",
+            "link": "/historic-city-of-ahmedabad-1"
+          },
+          {
+            "name": "Architecture of the city",
+            "link": "/architecture-of-the-city"
+          },
+          { "name": "Riverfront Scenes", "link": "" },
+          { "name": "Iconic Monuments", "link": "/iconic-monuments" },
+          { "name": "Traditional Stepwells", "link": "/traditional-stepwells" },
+          { "name": "Ahmedabad Attraction Pass", "link": "" },
+          { "name": "Biodiversity", "link": "" },
+          { "name": "Cultural Museums", "link": "" },
+          { "name": "Guided Tours and Itineraries", "link": "" },
+          { "name": "Spirituality", "link": "/spirituality" }
+        ]
+      },
+      {
+        "name": "Eat & Drink",
+        "link": "",
+        "dropdown": [
+          { "name": "Explore the diversity of food", "link": "/eat-and-drink" },
+          { "name": "Traditional & Local Delicacies", "link": "/new-page-3" },
+          { "name": "Riverfront Scenes", "link": "" },
+          { "name": "Unforgettable Experiences", "link": "" },
+          { "name": "Restaurants with a view", "link": "" },
+          { "name": "Themed Afternoon Teas", "link": "" },
+          { "name": "Pocket Friendly places", "link": "" },
+          { "name": "Sweet Tooth Diaries", "link": "" },
+          { "name": "Curated Learning & Masterclasses", "link": "" }
+        ]
+      },
+      {
+        "name": "Art and Culture",
+        "link": "/products",
+        "dropdown": [
+          { "name": "Literature", "link": "/literature" },
+          { "name": "Theaters", "link": "" },
+          { "name": "Riverfront Scenes", "link": "" },
+          { "name": "Movies", "link": "" },
+          { "name": "Dance", "link": "" },
+          { "name": "Music", "link": "" },
+          { "name": "Art Galleries", "link": "/art-galleries" }
+        ]
+      },
+      {
+        "name": "Information",
+        "link": "",
+        "dropdown": [
+          { "name": "Accommodations and Stays", "link": "/services-6-1" }
+        ]
+      },
+      {
+        "name": "SHOP",
+        "link": "/shop"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Ahmedabad"
+    },
+    "heritageCity": {
+      "title": "--- unesco world heritage city ---",
+      "card2": "AHMEDABAD’S VISITOR GUIDE",
+      "card3": "INSPIRING 2 CR  PEOPLE EVERY YEAR"
+    },
+    "mustSee": {
+      "title": "Must See places of Ahmedabad",
+      "card1": "Atal Bridge- Gujarat’s longest Bridge",
+      "card2": "Motera Stadium - World’s Larget Cricket Stadium",
+      "card3": "Aquatic Gallery - Gujarat’s largest Acquarium"
+    },
+    "explore": {
+      "title": "Explore",
+      "card1": "Thol Bird Sanctury",
+      "card2": "Kankaria Lake",
+      "card3": "Nal Sarovar Bird Sanctuary"
+    },
+    "feature": {
+      "title": "Need some inspiration for what to do ?",
+      "card1": "London theatre tickets",
+      "card2": "London attractions",
+      "card3": "London sightseeing",
+      "card4": "Royal London",
+      "card5": "Where to eat",
+      "card6": "Visit london app"
+    },
+    "GreenGreeting": {
+      "title": "Go Green in Ahmedabad!",
+      "subTitle": "Tips for a sustainable stay in the city!"
+    }
+  },
+  "newPage1": {
+    "hero": { "title": "Hot tickets", "subTitle": "hat's on in Ahmedabad" },
+    "musicEntertainment": {
+      "title": "Music & Entertainment",
+      "card1": "SAMARAGA:Music Festival",
+      "card2": "Javed Ali in Concert",
+      "card3": "Armaan Malik Live in Ahmedabad"
+    },
+    "events": {
+      "title": "VALENTINE’S SPECIALS",
+      "card1": "Valentine's Week Special - Pot Painting",
+      "card2": "Bellasen Valentine’s Day Offer: Romantic Experience with 5-Course Dinner",
+      "card3": "Galentine’s Day Celebration"
+    }
+  },
+  "nightLife": {
+    "hero": {
+      "title": "Explore the Nightlife of Ahmedabad",
+      "nightPlaceData": [
+        {
+          "id": 1,
+          "title": "Sabarmati Dinner Cruise",
+          "desc": "Delight in the picturesque landscapes and calm waters as you enjoy an exceptional cruising experience.",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/2cd0a796-8d6e-46e8-a2e3-07c074072367/River_Cruise_at_Atal_Pedestrian_Bridge.jpg?format=1500w"
+        },
+        {
+          "id": 2,
+          "title": "Manek Chowk",
+          "desc": "Take your pick from the variety of food options at the midnight food market",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/46af26ea-cad1-4874-8deb-d89244ec2170/manek-chowk-manek-chowk-3-1200-x-395.jpg?format=1500w"
+        },
+        {
+          "id": 3,
+          "title": "Sindhu Bhavan",
+          "desc": "Explore the vibrancy of the streets of Sindhu Bhavan",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/e8bade69-d0b8-4cb9-9248-9a2b4b3e8571/ahmedabda+night+life.jpg?format=1500w"
+        },
+        {
+          "id": 4,
+          "title": "Cycling at Rivefront",
+          "desc": "The riverfront is peaceful at night, perfect for a relaxing walk or cycling at night.",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738218416507-OLDKDEQWGGYEARNPKB4F/unsplash-image-2h5kX9fz5HU.jpg?format=1500w"
+        },
+        {
+          "id": 5,
+          "title": "Late-night Chai",
+          "desc": "Several chai spots stay open late, serving tea and snacks.IIM Road and Law Garden have some of the best stalls.",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738218547084-3ZG6TEJNKTU0VSCO64E2/unsplash-image-Wa9dHWRDNwo.jpg?format=1500w"
+        }
+      ]
+    },
+
+    "nightActivites": {
+      "title": "Popular nights out and activities",
+      "nightActivitesData": [
+        {
+          "id": 1,
+          "title": "Dinner night outs",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429572549-QSUMUELEYUGZ6A4155Z6/unsplash-image-TSS-1aqoRXE.jpg?format=500w"
+        },
+        {
+          "id": 2,
+          "title": "Fun parks and Games ",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429463425-Y0SUGFEH7R4PJ2WO7X0W/unsplash-image-u-s3EG1QUXw.jpg?format=500w"
+        },
+        {
+          "id": 3,
+          "title": "Bowling alleys",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429598282-VYSTYJML0BDG14QBBCLV/unsplash-image-TS2_PvGhGgs.jpg?format=500w"
+        },
+        {
+          "id": 4,
+          "title": "Escape rooms",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429657015-4U5R0HL7DSZMD38B5MP8/unsplash-image-OmaFZNYOy6E.jpg?format=500w"
+        },
+        {
+          "id": 5,
+          "title": "Board games night",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429682048-QJ6OADK582EEZJ3WU31D/unsplash-image-w7eaCH6ShR4.jpg?format=500w"
+        },
+        {
+          "id": 6,
+          "title": "Open mic",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429730566-1XBOEEFFNFLKKH2CIH7N/unsplash-image-LETdkk7wHQk.jpg?format=500w"
+        },
+        {
+          "id": 7,
+          "title": "Stand Up Comedy",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429763845-Z1LLPJ99K6KYFGHSMVI7/unsplash-image-jvNoSUrQkgU.jpg?format=500w"
+        }
+      ]
+    }
+  },
+  "goShopping": {
+    "title": "A Shopper’s Paradise: Exploring Ahmedabad’s Best Markets and Boutiques",
+    "shoppingData": [
+      {
+        "id": 1,
+        "title": "Law Garden Night Market: The Handicraft Heaven",
+        "desc": "If you’re looking for vibrant Gujarati embroidery , and traditional Chaniya Cholis , Law Garden is the place to be. This night market comes alive after sunset with stalls.",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/222faa15-14b0-4b96-8fd4-6e77e59033ba/law+garden+by+lost+traveller.jpg?format=1000w",
+        "link": "https://www.google.com/maps/place/Law+Garden+Market+(Street+side)/@23.0267207,72.5561664,441m/data=!3m1!1e3!4m6!3m5!1s0x395e85245d261741:0x4a4b49cf397d3c7c!8m2!3d23.0249844!4d72.5597348!16s%2Fg%2F11s8g180rh!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+      },
+      {
+        "id": 2,
+        "title": "CG Road & Ahmedabad One Mall: For Modern Fashion",
+        "desc": "For those who love branded shopping, Ahmedabad One Mall Palladium Mall , and CG Road  house top fashion labels, lifestyle stores, and international brands.",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/fc5e6ece-01bc-4556-8e9a-6584b182ca1e/ahmedabd+one+mall.jpg?format=1500w",
+        "link": "https://www.google.com/maps/place/Palladium+Ahmedabad/@23.0575877,72.5159735,763m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e9d0845742b0f:0x7e05407cae921b5a!8m2!3d23.0575828!4d72.5208444!16s%2Fg%2F11t6lm12t7!5m1!1e2?entry=tts&g_ep=EgoyMDI1MDEyOS4xIPu8ASoASAFQAw%3D%3D"
+      },
+
+      {
+        "id": 3,
+        "title": "Rani no Hajiro Market: A Hidden Gem for Antique Jewelry",
+        "desc": "Nestled near Manek Chowk, this market is known for its exquisite silver jewelry, vintage accessories, and tribal ornaments . If you're interested in streetside shopping and fan of unique, handcrafted pieces, this is a must-visit.",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/4bae31f8-de3b-4a0c-b655-46b21d2c357f/IMG_20241212_103158.jpg?format=1500w",
+        "link": "https://www.google.com/maps/place/Rani+no+Hajiro/@23.0236232,72.5865595,763m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e844a2f31190d:0xa116ee7245e6940f!8m2!3d23.0236183!4d72.5891344!16s%2Fm%2F012krs2c!5m1!1e2?entry=tts&g_ep=EgoyMDI1MDEyOS4xIPu8ASoASAFQAw%3D%3D"
+      },
+      {
+        "id": 4,
+        "title": "Kapasi Handicrafts Emporium – Best for Souvenirs & Handicrafts",
+        "desc": "If you want to take home authentic Gujarati handicrafts  like Wooden carvings and sculptures, Hand-painted pottery, Miniature paintings and brass artifacts, head to Kapasi Handicrafts Emporium. ",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738139191656-VCWZYDNSANG649RDIWR2/unsplash-image-9eS1Qb7JqaY.jpg?format=1000w",
+        "link": "https://www.google.com/maps/place/Kapasi+Handicrafts+Emporium/@23.0419934,72.5658436,763m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e845fe7d9ff79:0x97b58ca289b4bd82!8m2!3d23.0419885!4d72.5707145!16s%2Fg%2F1vj5ym62!5m1!1e2?entry=tts&g_ep=EgoyMDI1MDEyOS4xIPu8ASoASAFQAw%3D%3D"
+      },
+      {
+        "id": 6,
+        "title": "Bandhej – Sustainable & Handcrafted Fashion",
+        "desc": "A pioneer in ethical and slow fashion , Bandhej is known for its elegant handloom sarees, block-printed Kurtas, and fusion wear that celebrates Indian textiles. ",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738140125296-TM2TPW6HU06LW9PIA6YV/unsplash-image-sTp-dDBc4Xw.jpg?format=750w",
+        "link": "#"
+      },
+      {
+        "id": 7,
+        "title": "Asopalav – Bridal & Ethnic Wear",
+        "desc": "If you love ethical shopping, these boutiques offer, Asopalav is one of Ahmedabad’s most renowned boutiques for bridal lehengas, silk sarees, and festive outfits ",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738140230845-YUP7GRYL49OH2VLV2A9R/unsplash-image-sUkDIlr2cAQ.jpg?format=750w",
+        "link": "https://www.google.com/maps/place/Asopalav+Satelite/@23.0307581,72.4422404,12209m/data=!3m2!1e3!5s0x395e84cf5e7cc5fd:0xcfad5b02de63fe40!4m7!3m6!1s0x395e84cf5e882a5d:0xc07a1038f290115b!8m2!3d23.028125!4d72.5321348!15sCghBc29wYWxhdiIDiAEBWgoiCGFzb3BhbGF2kgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F1tfzvx0p!5m1!1e2?entry=tts&g_ep=EgoyMDI1MDEyOS4xIPu8ASoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  "sportGames": {
+    "title": "Ahmedabad Fitness Arena: Move, Sweat, Conquer!",
+    "sportsData": {
+      "title": "Join in the local sports",
+      "data": [
+        {
+          "id": 1,
+          "title": "Pickleball",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737905996494-FD8OLIH157PT97IAX7J7/unsplash-image-0wbYOLZwDPY.jpg?format=500w",
+          "desc": "Play Pickleball a paddle sport that combines elements of tennis, badminton, and ping-pong. It's played with a plastic ball and paddles on a court that's similar in size to a badminton court",
+          "link": "https://www.google.com/maps/place/SBR+Pickleball+By-+Colosseum+Ahmedabad/@23.0206537,72.3796034,12210m/data=!3m1!1e3!4m10!1m2!2m1!1spickleball!3m6!1s0x395e9b5600d60d71:0xd877ae19587693f6!8m2!3d23.0381054!4d72.5079303!15sCgpwaWNrbGViYWxskgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11vs8q4b08!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "id": 2,
+          "title": "Box cricket",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738010274168-RBGYAR4UNOW6JONBPYLF/unsplash-image-dE3exzmYlKc.jpg?format=500w",
+          "desc": "Play Box Cricket is a version of the game of cricket that retains many of the characteristics of the original game but is played for fun in a more controlled environment, making it more accessible to casual players.",
+          "link": "https://www.google.com/maps/search/box+cricket/@23.020801,72.3796033,12210m/data=!3m2!1e3!4b1!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "id": 3,
+          "title": "Squash",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737906104714-0OTPP0E3C299U005ZJQC/unsplash-image-Ucz3or3qDDA.jpg?format=500w",
+          "desc": "Play Squash a racquet sport played by two players (or four players for doubles) in a four-walled court with a small, hollow rubber ball.",
+          "link": "#"
+        },
+        {
+          "id": 4,
+          "title": "Table Tennis",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737906160928-ZINPYNOQJV88KE0PBTLP/unsplash-image-hdHMZumzLTo.jpg?format=500w",
+          "desc": "Boost your reflexes and have fun with table tennis—a fast-paced game for all ages! Stay active, sharpen your focus, and enjoy exciting rallies with friends or in competition.",
+          "link": "#"
+        },
+        {
+          "id": 5,
+          "title": "Badminton",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738010158745-WRVAFDQ4DTU0C3OHENWN/unsplash-image-hVeOZslMjGA.jpg?format=500w",
+          "desc": "Experience the thrill of badminton—an exciting sport that keeps you active and energized! Improve your agility, reflexes, and stamina while having fun with friends or in competition.",
+          "link": "#"
+        },
+        {
+          "id": 6,
+          "title": "Football",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738010321791-XWEYZ5Y68SP1PHHQHAEC/unsplash-image-OgqWLzWRSaI.jpg?format=500w",
+          "desc": "Unleash your energy with football—a dynamic sport that builds teamwork, speed, and endurance! Feel the excitement of the game as you score goals and create unforgettable moments on the field.",
+          "link": "#"
+        },
+        {
+          "id": 7,
+          "title": "Billiards",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738010081258-A640A12QLDYF0HVN620O/unsplash-image-DUcVepObkXk.jpg?format=500w",
+          "desc": "Sharpen your focus and strategy with billiards—a game of skill, precision, and finesse! Enjoy a relaxed yet competitive experience while mastering every shot on the table.",
+          "link": "https://www.google.com/maps/search/billiards/@23.0214534,72.3383943,24419m/data=!3m2!1e3!4b1!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "id": 8,
+          "title": "Pool",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738010120707-6DIEJNLK9XJP5DME9NRT/unsplash-image-6UeBe2HqziA.jpg?format=500w",
+          "desc": "Sharpen your focus and strategy with billiards—a game of skill, precision, and finesse! Enjoy a relaxed yet competitive experience while mastering every shot on the table.",
+          "link": "https://www.google.com/maps/search/billiards/@23.0214534,72.3383943,24419m/data=!3m2!1e3!4b1!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+        }
+      ]
+    }
+   
+  },
+  "inputBanner": {
+    "title": "Subscribe to Our Newsletter",
+    "subTitle": "Sign up with your email address to receive news and updates."
+  },
+  "ahemdabad": {
+    "hero": {
+      "title": "Things to do in Ahmedabad for families"
+    },
+    "kidsdata": {
+      "title": "Ahmedabad for Kids",
+      "data": [
+        {
+          "id": 1,
+          "title": "Explore the Science City!",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/ddf2fd82-422f-4288-97eb-27af03a8e28f/Planet_Earth_at_Science_City_Ahmedabad.jpeg?format=500w",
+          "desc": "Embark on an exciting journey of discovery at Science City, where science meets fun and innovation! Located in the vibrant city of Ahmedabad, Science City offers a perfect blend of education and entertainment for all ages. Dive into the wonders of science through state-of-the-art exhibits, interactive displays, and engaging activities.",
+          "link": "https://sciencecity.gujarat.gov.in/shop/category/entry-parking-1"
+        },
+        {
+          "id": 2,
+          "title": "Sundarvan - A Nature Discovery Centre",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/eb9b1b9e-b5e8-48dd-b4a7-31450685152d/Sundarvan_-_A_Nature_Discovery_Center_Ahmedabad.jpg?format=500w",
+          "desc": "Escape into a serene green oasis at Sundarvan, Ahmedabad’s very own Nature Discovery Centre! Nestled in the heart of the city, this compact yet captivating space is a haven for nature enthusiasts and families seeking a peaceful retreat from the urban hustle.",
+          "link": "https://www.sundarvan.org/"
+        },
+        {
+          "id": 3,
+          "title": "Sabarmati Riverfront",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737815037579-6PHHH65QF1MBWCUPMS1E/unsplash-image-YiyBsUQynIA.jpg?format=750w",
+          "desc": "PThe Sabarmati Riverfront offers a range of exciting activities for children, blending fun and learning. Kids can enjoy cycling, skating, and playing in well-equipped parks with swings and slides. Splash zones and interactive fountains provide water fun on warm days, while open green spaces are perfect for picnics and family outings. Regular workshops, storytelling sessions, and art activities nurture creativity and curiosity. It’s a vibrant destination for outdoor adventure and quality family time!",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "title": "Auto World Vintage Car Museum",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/52a28aec-dfa2-4efb-be7d-e32c522c9de6/IMG_20240123_135152.jpg?format=500w",
+          "desc": "Ahmedabad's treasure trove of vintage and rare automobiles features an exquisite collection of cars, motorcycles, and carts from a bygone era—think Rolls-Royces, Bentleys, Cadillacs, and more—this museum showcases the golden age of automobile craftsmanship. Wander through beautifully curated exhibits and relive the luxury, innovation, and grandeur that defined the automotive world over the decades",
+          "link": ""
+        },
+        {
+          "id": 5,
+          "title": "Sabarmati Ashram",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737817279169-3FR7IGXBFDBL88B5QMDK/unsplash-image-F2Lvk8rxvjc.jpg?format=750w",
+          "desc": "The legacy of Mahatma Gandhi at Sabarmati Ashram is a serene oasis on the banks of the Sabarmati River in Ahmedabad. Once the epicenter of India's struggle for independence, this historic site served as Gandhi’s humble home and the birthplace of transformative movements like the Dandi March. Walk through its tranquil grounds, explore personal artifacts, letters, and photographs, and feel the powerful simplicity of a life devoted to truth and nonviolence.",
+          "link": ""
+        },
+        {
+          "id": 6,
+          "title": "Dr. Vikram Sarabhai Space Museum",
+          "img": "",
+          "desc": "Located at the Space Applications Centre in Ahmedabad, is a tribute to India’s Father of the Space Program. This interactive museum showcases India’s advancements in space technology through satellite models, space applications, and captivating exhibits. Visitors can explore the history of ISRO, witness rocket prototypes, and even experience space science through engaging audio-visual presentations, making it a must-visit for science enthusiasts and space lovers.",
+          "link": ""
+        }
+      ]
+    },
+    "learingActivites": {
+      "title": "Learning activties for kids",
+      "data": [
+        {
+          "id": 1,
+          "title": "Learn about the Independence History of Ahmedabad ",
+          "desc": "A guided tour at the Sardar Vallabhbhai Patel’s Home",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/2ef1c555-fae7-4d7b-a362-ff82419a1547/IMG_20220807_091358.jpg?format=500w"
+        },
+        {
+          "id": 2,
+          "desc": "A guided tour at the Sardar Vallabhbhai Patel Museum",
+
+          "title": "Learn about the Independence Struggle of India ",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/de851a11-661a-42c2-983e-1d6b137fa779/sardar-vallabhbhai-patel-national-museum-ahmedabad-gujarat-attr-about.jpeg?format=500w"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "title": "Explore Ahmedabad"
+  }
+}
