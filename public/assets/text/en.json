@@ -4,7 +4,10 @@
     "noData": "No data Found",
     "visitNow": "Visit Now",
     "signup": "Sign Up",
-    "startExploring": "Start Exploring"
+    "startExploring": "Start Exploring",
+    "makeIt": "Make It",
+    "explore": "explore",
+    "exploreMore":"explore More"
   },
   "header": {
     "login": "Login",
@@ -67,7 +70,7 @@
           { "name": "Biodiversity", "link": "" },
           { "name": "Cultural Museums", "link": "" },
           { "name": "Guided Tours and Itineraries", "link": "" },
-          { "name": "Spirituality", "link": "/spirituality" }
+          { "name": "Spirituality", "link": "/spirtituality" }
         ]
       },
       {
@@ -350,7 +353,6 @@
         }
       ]
     }
-   
   },
   "inputBanner": {
     "title": "Subscribe to Our Newsletter",
@@ -422,6 +424,392 @@
 
           "title": "Learn about the Independence Struggle of India ",
           "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/de851a11-661a-42c2-983e-1d6b137fa779/sardar-vallabhbhai-patel-national-museum-ahmedabad-gujarat-attr-about.jpeg?format=500w"
+        }
+      ]
+    }
+  },
+  "history": {
+    "hero": {
+      "title": "Welcome to Ahmedabad, India's first UNESCO World Heritage City, where every corner tells a story! From the serene banks of the Sabarmati River to the vibrant chaos of its centuries-old bazaars, this UNESCO World Heritage City invites you to explore its rich tapestry of history and culture. Wander through ancient Pols with intricately carved havelis, marvel at the architectural wonders of the Adalaj Stepwell and Sidi Saiyyed Mosque, and savor the city’s legendary street food."
+    },
+    "category": {
+      "title": "Explore by Category",
+      "data": [
+        {
+          "id": 1,
+          "title": "Museums",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/319e736f-bdb0-4a11-9033-c88a62a63288/museum.png?format=300w"
+        },
+        {
+          "id": 2,
+          "title": "Monuments",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/9f4b9231-0b77-48a4-bb33-0a39b0fe7f70/monuments.png?format=300w"
+        },
+        {
+          "id": 3,
+          "title": "Theaters",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/862a8df9-941f-47ee-9217-e896eade5a42/theater.png?format=300w"
+        },
+        {
+          "id": 4,
+          "title": "Library",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/be410c2e-52ab-471c-8f94-2554c7bd48de/library.png?format=300w"
+        },
+        {
+          "id": 5,
+          "title": "Religious places",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a0826c53-3c37-4b5a-82c5-7926821cd56e/pray.png?format=300w"
+        },
+        {
+          "id": 6,
+          "title": "Stepwells",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/ce3b540b-3f74-410b-9db5-a3defbee92e7/stepwell.png?format=300w"
+        },
+        {
+          "id": 7,
+          "title": "History",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/0a4a86b2-a70c-4f69-944f-ffefb04d4a49/history.png?format=300w"
+        },
+        {
+          "id": 8,
+          "title": "Tours",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1b41ece5-c7b0-4411-9f33-3c1e673b6b77/tours.png?format=300w"
+        }
+      ]
+    }
+  },
+  "curated": {
+    "hero": {
+      "title": "Experience the vibrancy of the city",
+      "data": [
+        {
+          "id": 1,
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847890165-I7LPX06YA44DBGGFPSGA/image-asset.jpeg?format=1500w",
+          "title": "An evening at Amdavad ni Gufa",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."
+        },
+        {
+          "id": 2,
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847890165-I7LPX06YA44DBGGFPSGA/image-asset.jpeg?format=1500w",
+          "title": "Build it.",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."
+        }
+      ]
+    },
+    "makeIt": {
+      "title": "Make it stand out.",
+      "data": [
+        {
+          "id": 1,
+          "title": "Learning Block Printing",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618497259178-6XJGK9GR6YAVBQL5L519/20140301_Trade-151_012-2.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://sciencecity.gujarat.gov.in/shop/category/entry-parking-1"
+        },
+        {
+          "id": 2,
+          "title": "Hands-on Pottery",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1607694583486-2PQT0LQ193RL7MCB6DX4/20140228_Trade+151_0046.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://www.sundarvan.org/"
+        },
+        {
+          "id": 3,
+          "title": "Learning the wood work",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1607694644871-IC85FNH781UNZSZEGHDR/Aro+Ha_0428.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+
+          "link": ""
+        },
+        {
+          "id": 4,
+          "title": "Mata ni Pachedi",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        },
+        {
+          "id": 5,
+          "title": "Warli Painting Workshop",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        },
+        {
+          "id": 6,
+          "title": "Terracotta workshop",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        },
+        {
+          "id": 7,
+          "title": "Gouache Painting Workshop",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        },
+        {
+          "id": 8,
+          "title": "Cloth dying",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        },
+        {
+          "id": 9,
+          "title": "Mehndi art",
+          "img": "",
+          "desc": "Description goes here",
+          "link": ""
+        }
+      ]
+    }
+  },
+  "sightSeen": {
+    "hero": {
+      "title": "India’s first UNESCO World Heritage City"
+    },
+    "data": [
+      {
+        "id": 1,
+        "title": "Visit Top Attractions",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/e4b89e42-6aea-41f9-b95b-df3a2cac9abd/IMG_20211223_104708%7E2.jpg?format=750w",
+        "desc": "Ahmedabad, the vibrant heart of Gujarat, is a city that seamlessly blends history, culture, and modernity. From its UNESCO World Heritage City status to its bustling markets and serene riverfront, Ahmedabad offers something for every traveler"
+      },
+      {
+        "id": 2,
+        "title": "Join a Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/bf45fc7d-3c83-48fb-b5c0-1514c3f8f96f/IMG_20241216_113515.jpg?format=750w",
+        "desc": "Explore Ahmedabad like never before by joining guided tours that reveal the city's rich history, vibrant culture, and hidden gems. Whether you’re a history enthusiast, foodie, or art lover, Ahmedabad offers a variety of curated experiences for every interest:"
+      },
+      {
+        "id": 3,
+        "title": "Find days out of town",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/e388445b-fa32-4cb1-a508-4a68c1202108/IMG_20231112_175851.jpg?format=750w",
+        "desc": "Looking for a quick getaway from the bustling city of Ahmedabad? The surrounding region offers plenty of options for a refreshing day trip. Here are some must-visit destinations:"
+      },
+      {
+        "id": 4,
+        "title": "Ahmedabad Pass",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a17da97b-962b-4da5-840e-91047fd1f1ba/IMG_20240708_132616.jpg?format=750w",
+        "desc": "Make the most of your visit to Ahmedabad with the Ahmedabad Pass, your all-in-one ticket to the city’s top attractions! This convenient pass grants you access to a curated selection of the city’s must-see landmarks, museums, and experiences, ensuring you get the best of Ahmedabad at an incredible value."
+      }
+    ]
+  },
+  "Cultural": {
+    "title": "Curated Cultural Tours",
+    "data": [
+      {
+        "id": 1,
+        "title": "Patan & Modhera: The Stepwells and Sun Temple Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738044750655-Z44NY4A1OY2NMY8XMO3G/unsplash-image-t-42dZ63_P8.jpg?format=500w",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. "
+      },
+      {
+        "id": 2,
+        "title": "Champaner-Pavagadh: UNESCO Heritage & Spirituality Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738044788523-DP13LJTE0P8AV5WL8TJU/unsplash-image-O0tYBn1DfYk.jpg?format=500w",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. "
+      },
+      {
+        "id": 3,
+        "title": "Palitana: The Jain Pilgrimage Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/7fbc1a3c-0a5a-4615-9337-4755ba13bde3/Samovsaran_Mandir_Palitana_01.jpg?format=500w",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. "
+      },
+      {
+        "id": 4,
+        "title": "Lothal: Indus Valley Civilization Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/f0364a8b-f086-4623-a314-e7c3533afa05/Lothal.jpg?format=500w",
+        "desc": "MIt all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. "
+      },
+      {
+        "id": 5,
+        "title": "Vadnagar & Taranga: Buddhist Heritage and Serenity Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/51ad74fd-27c9-4e5a-95a8-e5caebe5e94f/Buddhist_Monastery_at_Vadnagar_5.jpg?format=500w",
+        "desc": "Description goes here"
+      },
+      {
+        "id": 6,
+        "title": "Nal Sarovar & Vautha: Nature and Intangible Heritage Tour",
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1273a115-fabe-46c6-b9ed-30cdebff72fe/nal+sarovar+2.jpg?format=500w",
+        "desc": "Description goes here"
+      }
+    ]
+  },
+  "architecture": {
+    "hero": {
+      "title": "Architecture of the city",
+      "subHeading": "Ahmedabad, the first city in India to be inscribed as a UNESCO World Heritage City in 2017, boasts a rich architectural history that reflects the cultural, religious, and social fabric of the city. Its architectural heritage spans centuries, showcasing a blend of Hindu, Jain, Islamic, and colonial influences.",
+      "subHeading2": "In 2017, Ahmedabad became the first Indian city to receive UNESCO World Heritage City status. This recognition highlights its unique architectural fabric, including:",
+      "list1": "600+ pols with historic wooden houses.",
+      "list2": "20+ protected monuments showcasing Indo-Islamic and modernist architecture.",
+      "list3": "Its vibrant living heritage, with communities actively engaging in preserving their built and intangible traditions.",
+      "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/4529dbae-0687-4b3b-82e0-f65468f0d294/unsplash-image-i01OOxtRwZM.jpg?format=2500w"
+    },
+    "blog": {
+      "data": [
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/41b7e2d1-3384-4ef5-89e3-7a05f4e1fb9e/Sanskar+kendra.jpg?format=750w",
+          "title": "Sanskar Kendra (1954)",
+          "subTitle": "by Le Corbusier"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1a52af8a-e850-4ee0-9721-b2282640790d/IIMA+Louis_Kahn_Plaza.jpg?format=750w",
+          "title": "Indian Institute of Management, Ahmedabad (IIM-A) (1961–1974)",
+          "subTitle": "by Louis Kahn"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737905180861-O1U48YRVP8Q6FISTU1Z3/unsplash-image-ZWu7kCw0__o.jpg?format=750w",
+          "title": "Sardar Vallabhbhai Patel Stadium (1960)",
+          "subTitle": "by Charles Correa"
+        },
+        {
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/398e5a41-d1ff-4b24-9a7e-279334df8291/CEPT_SBST.jpg?format=750w",
+          "title": "CEPT University Campus (1962)",
+          "subTitle": "by B.V. Doshi"
+        }
+      ]
+    },
+    "places": {
+      "data": [
+        {
+          "id": 1,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737904702020-URY97R8R4WMAIOZPSIRK/unsplash-image-AKLZ-2wfits.jpg?format=500w",
+          "title": "Amdavad ni Gufa (1994)"
+        },
+        {
+          "id": 2,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/c73093b8-e837-4f52-bcc2-6ce07006f2a2/Tagore_Hall_Ahmedabad_3.jpg?format=500w",
+          "title": "Tagore Memorial Hall (1966)"
+        },
+        {
+          "id": 3,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/52bdf4a1-6bb7-4067-a298-5cb7a97938fc/Mill+Owners%E2%80%99+Association+Building+%281954%29.jpg?format=500w",
+          "title": "Mill Owners’ Association Building (1954)"
+        },
+        {
+          "id": 4,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/39f54b5f-5fbc-4a33-86e7-374412df6be7/unsplash-image-lgcVzkqbUBE.jpg?format=1000w",
+          "title": "Ellis Bridge (1892 CE)"
+        }
+      ]
+    }
+  },
+  "iconic": {
+    "heroTitle": "ICONIC MONUMENTS",
+    "fortDeatail": {
+      "title": "Bhadra Fort (1411)",
+      "list1": "Built by Sultan Ahmad Shah, the founder of Ahmedabad.",
+      "list2": "Houses the Bhadra Kali Temple and Azam Khan Sarai.",
+      "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/d991f020-a6fa-4f80-b62b-690552d38756/BHADRA+FORT?format=1000w"
+    },
+    "galleryData": [
+      {
+        "id": 1,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/81fbaca8-8693-4395-8390-93669907a65d/IMG_20230720_130154.jpg?format=1000w",
+        "tilte": "title",
+        "desc": "description"
+      },
+      {
+        "id": 2,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/d9ec6f66-016b-49fb-b7bd-664abbe9b6ca/IMG_20241212_094735.jpg?format=1500w",
+        "tilte": "title",
+        "desc": "description"
+      },
+      {
+        "id": 3,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/8c7c7457-8109-4667-b354-5fdfb86908d6/IMG_20241212_101105.jpg?format=1000w",
+        "tilte": "title",
+        "desc": "description"
+      },
+      {
+        "id": 4,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/06077507-8b8d-4d8e-8261-2acd84d4e6d2/IMG_20241208_121234.jpg?format=1000w",
+        "tilte": "title",
+        "desc": "description"
+      },
+      {
+        "id": 5,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/36fc2936-d660-4b12-8bdf-eeb8501fe3ae/IMG_2016.jpg?format=750w",
+        "tilte": "title",
+        "desc": "description"
+      }
+    ]
+  },
+  "stepwell": {
+    "heroTitle": "Traditional Stepwells",
+    "detail": {
+      "description": "A stepwell (also known as baoli, vav, bawdi, or pushkarni ) is a unique water management system that has been historically used in India, especially in arid and semi-arid regions. These structures are architecturally significant and serve both functional and social purposes.",
+      "data": [
+        {
+          "id": 1,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1739125166974-HOIOJFW3JVMYG68ZQ6I9/unsplash-image-42yboRjxNdc.jpg?format=1500w",
+          "title": "ADALAJ STEPWELL",
+          "desc": "Adalaj Stepwell, located near Ahmedabad in Gujarat, is a magnificent five-story stepwell built in 1498 by Queen Rudabai of the Vaghela dynasty. Designed in the Indo-Islamic architectural style, it features intricate carvings of deities, floral motifs, and mythological scenes. The stepwell served as a water conservation structure and a community space for travelers and villagers. Its unique design allows sunlight to filter in, creating mesmerizing patterns of light and shadow. The stepwell remains an important symbol of Gujarati craftsmanship and heritage."
+        },
+        {
+          "id": 2,
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/9531ea3f-e1c6-4bf4-b80f-b390117873e7/IMG_20241220_120626.jpg?format=1000w",
+          "title": "BAI HARIR STEPWELL",
+          "desc": "Bai Harir Stepwell, also known as Dada Harir Vav, is a magnificent five-story stepwell located in Ahmedabad, Gujarat. Built-in 1499 during the reign of Mahmud Begada, it was commissioned by Bai Harir Sultani, a noblewoman from the royal court. The stepwell showcases exquisite Solanki-style architecture with intricate geometric patterns, floral motifs, and Quranic inscriptions. It served as a water conservation structure and a resting place for travelers. The interplay of light and shadow within its deep corridors adds to its architectural beauty, making it a significant heritage site in Ahmedabad."
+        }
+      ]
+    }
+  },
+  "spirtituality": {
+    "hero": {
+      "title": "Explore the Spirituality of the city",
+      "data": [
+        {
+          "id": 1,
+          "title": "Spirituality in Hinduism",
+          "img": "",
+          "desc": ""
+        },
+        {
+          "id": 2,
+          "title": "Spirituality in Islam",
+          "img": "",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://www.sundarvan.org/"
+        },
+        {
+          "id": 3,
+          "title": "Spirituality in Jainism",
+          "img": "",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+
+          "link": ""
+        }
+      ]
+    },
+    "bannerTitle": "Pilgrimage tours",
+    "oneDayTour": {
+      "title": "One day tours near Ahmedabad",
+      "data": [
+        {
+          "id": 1,
+          "title": "Dakor - Galteshwar trip",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618497259178-6XJGK9GR6YAVBQL5L519/20140301_Trade-151_012-2.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://sciencecity.gujarat.gov.in/shop/category/entry-parking-1"
+        },
+        {
+          "id": 2,
+          "title": "Pavagadh",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1607694583486-2PQT0LQ193RL7MCB6DX4/20140228_Trade+151_0046.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://www.sundarvan.org/"
+        },
+        {
+          "id": 3,
+          "title": "Palitana",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1607694644871-IC85FNH781UNZSZEGHDR/Aro+Ha_0428.jpg?format=750w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+
+          "link": ""
         }
       ]
     }

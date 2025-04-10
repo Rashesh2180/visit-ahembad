@@ -1,10 +1,10 @@
 import Hero from '@/components/historyCity1/Hero'
 import React from 'react'
 
-const History1 = () => {
+const History1 = ({data}) => {
   return (
     <div>
-        <Hero/>
+        <Hero data={data}/>
       
     </div>
   )

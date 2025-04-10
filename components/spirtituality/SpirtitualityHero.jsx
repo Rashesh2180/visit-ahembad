@@ -23,15 +23,15 @@ const data = [
     link: "",
   },
 ];
-const SpirtitualityHero = () => {
+const SpirtitualityHero = ({data}) => {
   return (
     <div className="sm:py-20 py-10 bg-[#F1FFE0]">
       <div className="main-container">
-        <h2 className="section-title mb-10 sm:mb-20">Explore the Spirituality of the city</h2>
+        <h2 className="section-title mb-10 sm:mb-20">{data?.title}</h2>
         <div className=" ">
-          {data.length > 0 && (
+          {data?.data?.length > 0 && (
             <div className="grid xl:gap-12 gap-8  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-sm:h-[500px] overflow-y-auto">
-              {data.map((ele) => (
+              {data?.data?.map((ele) => (
                 <div
                   className="h-full w-full flex flex-col items-center gap-4 text-black"
                   key={ele.id}

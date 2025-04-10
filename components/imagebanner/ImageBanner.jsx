@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImageBanner = ({ className, bgImage, heading, subheading }) => {
+const ImageBanner = ({ className, bgImage, heading, subheading, }) => {
   return (
     <div 
       className={`relative ${className} sm:h-[470px] h-[300px] w-full bg-cover bg-no-repeat`}
