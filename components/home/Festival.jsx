@@ -5,11 +5,11 @@ import React from "react";
 const Festival = () => {
   return (
     <div className="main-container md:py-32 py-20">
-      <h6 className="font-semibold text-base mb-1 text-black">
+      <h6 className="font-semibold text-3xl mb-1 text-black">
         Music & Entertainment
       </h6>
       <div className="grid gap-5 sm:grid-cols-3 grid-cols-1">
-        <Link href="" className="relative">
+        <a target="_blank" href="https://allevents.in/ahmedabad/samraga-music-festival/80002133531197?aff=u1gjbz&ref=featured-eventlist" className="relative">
           <Image
             src={
               "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/42fa3d74-4ab7-4e08-aa5d-55bf65bc90dc/SAMRAGA+Music+Festival.jpg?format=1500w"
@@ -18,13 +18,13 @@ const Festival = () => {
             unoptimized
             alt=""
             width={506}
-            className="w-full"
+            className="w-full mb-3"
           />
-          <h6 className="font-semibold text-sm  text-black">
+          <h6 className="font-semibold text-xl  text-black">
             SAMARAGA:Music Festival
           </h6>
-        </Link>
-        <Link href=""
+        </a>
+        <a target="_blank" href="https://in.bookmyshow.com/events/javed-ali-live-in-concert/ET00428339"
          className="relative">
           <Image
           alt=""
@@ -34,13 +34,13 @@ const Festival = () => {
             height={254}
             unoptimized
             width={506}
-            className="w-full"
+            className="w-full mb-3"
           />
-          <h6 className="font-semibold text-sm  text-black">
+          <h6 className="font-semibold text-xl  text-black">
             Javed Ali in Concert
           </h6>
-        </Link>
-        <Link href="" className="relative">
+        </a>
+        <a target="_blank" href="https://in.bookmyshow.com/events/armaan-live-in-ahmedabad/ET00428270" className="relative">
           <Image
           alt=""
             src={
@@ -49,12 +49,12 @@ const Festival = () => {
             height={254}
             unoptimized
             width={506}
-            className="w-full"
+            className="w-full mb-3"
           />
-          <h6 className="font-semibold text-sm  text-black">
+          <h6 className="font-semibold text-xl  text-black">
             Armaan Malik Live in Ahmedabad
           </h6>
-        </Link>
+        </a>
       </div>
     </div>
   );

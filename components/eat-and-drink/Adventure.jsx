@@ -77,7 +77,7 @@ const Adventure = () => {
                     alt={ele.title}
                     className="xl:h-[400px] h-60 object-cover  w-full mb-4"
                   />
-                  <h5 className="mb-2 font-semibold text-black text-base">
+                  <h5 className="mb-2 font-semibold text-black text-2xl">
                     {ele.title}
                   </h5>
                 

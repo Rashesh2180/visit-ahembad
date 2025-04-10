@@ -20,10 +20,10 @@ const CartPage = () => {
   return (
     <section className="sm:py-20 py-10 px-5 sm:px-10 bg-[#F1FFE0] text-black">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8">Your Cart</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Your Cart</h2>
 
         {cartItems.length === 0 ? (
-          <p>Your cart is empty.</p>
+          <p  className="text-center">Your cart is empty.</p>
         ) : (
           <div className="space-y-6">
             {cartItems.map((item) => (

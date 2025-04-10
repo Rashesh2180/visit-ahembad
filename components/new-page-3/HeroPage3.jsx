@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 3,
-    img: "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/52bdf4a1-6bb7-4067-a298-5cb7a97938fc/Mill+Owners%E2%80%99+Association+Building+%281954%29.jpg?format=500w",
+    img: "",
     title: "Gordhan Thal",
     desc:'Offers an authentic Gujarati thali experience with a lavish spread of traditional delicacies. Known for its warm hospitality and cultural ambience, it provides a true taste of Gujarat culinary heritage.'
   },
@@ -37,7 +37,7 @@ const HeroPage3 = () => {
               className="flex flex-col flex-1 gap-5 min-w-[300px] max-w-[400px]"
             >
               <Image
-                src={ele.img}
+                src={ele.img || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAMFBMVEXz9Pa5vsro6u729/ji5OnT1969ws21usjM0NjFydPw8fTR1Nz5+vre4OXIzNXt7vGvU6iIAAACq0lEQVR4nO3b23qiMBRAYcLmmBh4/7cdBascglrImE2/9d+N07FdsyEGi1kGAAAAAAAAAAAAAAAAAAAAAAAAAEAEcolDJHVJluW+jMMXNm2J5G0dT1dcUsZ4E1XtE7YUVdwYY3yyE8d2sVtMm6pF8nEwVRxjTZFoNFIO374p4nDDs5VpY3KJY5yzS9PyiIn0dMRE88djRGxu9+6xdMVYP+xtqnLfHktVTN/V9fBA3RZ7nk5TTG/q5wv5nj2WohjbTVpMtWM2emLET1uu24Lfnzd6YrJ2sWHMf72m6YnJF7vf6sVZ04c71cRIsYgx5eY/c10ffFxPzOqScytGytp0wdmoiclWk9k4zMTdForgbPTEyOICemttLsdFLzQbPTEXN48JnxfW3RfwOvD3emLuP8rrxcyWr2oVxcyXgMYGTvFpy202iy9RFHP903M2LnSQzVoCR5qmmOuK1lXmdgnQ+tBeZtGyXgV0xUhf+NtbxsFLT1uu3zBsZrPRFfOSW6UsZ3OemLIOxcxqzhIjGy2zFfosMZst0zXtJDHbLdMapTG2mO7M1mvyoua+kKuMkeskJheab1qeewGVMdnt4e7n0dDrS3g2CmNkaDGP2byby/DFw+/LFMY8fvqx5v1c9MbIcxJ124t8Mhe1MbOjquo/a1Eas5jEp7+L1hnz6tXxbDEfHlVniLE756Ix5sOV6wwxkvm9c9EXs/t8URizfuP8zDGH7tUihhhiiCHmf8TkzRGFqpjrNvOI4RkUxRxHTDRxY3TccOojfUpjXBBdqluBx29fHVrInobBVMnun+/vtzLF+YzG+D8Tvq/mG45ckYU16T4R1DdxU0I3bnyxxhmz/9p/qerSfrbJete1kXQ+dF/Hd3P6PJKUhxgAAAAAAAAAAAAAAAAAAABwSv8AkJ81XG/eK0EAAAAASUVORK5CYII="}
                 alt=""
                 className="w-full sm:h-[350px] h-[250px] rounded-lg object-cover"
                 height={220}

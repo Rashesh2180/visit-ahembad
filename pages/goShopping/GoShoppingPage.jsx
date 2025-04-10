@@ -98,7 +98,7 @@ const GoShoppingPage = () => {
                     alt={ele.title}
                     className="h-[250px] object-cover  w-full"
                   />
-                  <h5 className="font-semibold text-black text-base text-center">
+                  <h5 className="font-semibold text-black text-xl text-center">
                     {ele.title}
                   </h5>
                   <p className="text-xs text-center text-black">
@@ -107,12 +107,12 @@ const GoShoppingPage = () => {
                       ? `${ele.desc.slice(0, 80)}...`
                       : ele.desc}
                   </p>{" "}
-                  <Link
-                    href="https://www.google.com/maps/place/Law+Garden+Market+(Street+side)/@23.0256261,72.5572765,763m/data=!3m1!1e3!4m6!3m5!1s0x395e85245d261741:0x4a4b49cf397d3c7c!8m2!3d23.0249844!4d72.5597348!16s%2Fg%2F11s8g180rh!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                  <a target="_blank"
+                    href={ele.link}
                     className="p-3 mx-auto mt-auto bg-black text-white text-sm text-center font-semibold cursor-pointer inline-block"
                   >
                     Visit Now
-                  </Link>
+                  </a>
                 </div>
               </SwiperSlide>
             ))

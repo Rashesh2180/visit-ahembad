@@ -44,7 +44,7 @@ const Activities = () => {
   return (
     <section className="bg-[#F1FFE0] sm:py-32 py-10">
       <div className="main-container">
-        <h6 className="mb-5 text-3xl text-black font-semibold">
+        <h6 className="mb-8 section-title">
         Popular nights out and activities
         </h6>
         {data.length > 0 && (
@@ -57,7 +57,7 @@ const Activities = () => {
                   height={160}
                   width={200}
                   unoptimized
-                  className="w-full  mb-5 sm:h-60 h-80"
+                  className="w-full  mb-5 sm:h-60 h-80 object-cover"
                 />
                   {ele.title === "Dinner night outs" ? (
                     <Link

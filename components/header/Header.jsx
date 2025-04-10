@@ -17,7 +17,7 @@ const menuItems = [
       { name: "Go Shopping!", link: "/go-shopping" },
       { name: "Sports and games", link: "/sports-and-games" },
       { name: " Ahmedabad  for kids", link: "/ahmedabad" },
-      { name: "Explore charms of Heritage", link: "" },
+      { name: "Explore charms of Heritage", link: "/historic-city-of-ahmedabad-1" },
       { name: "Curated experiences", link: "/curated-experiences" },
     ],
   },
@@ -46,9 +46,9 @@ const menuItems = [
     dropdown: [
       {
         name: " Historic city of Ahmedabad",
-        link: "/products/laptops",
+        link: "/historic-city-of-ahmedabad-1",
       },
-      { name: "Architecture of the city", link: "" },
+      { name: "Architecture of the city", link: "/architecture-of-the-city" },
       { name: "Riverfront Scenes", link: "" },
       {
         name: "Iconic Monuments",
@@ -70,7 +70,7 @@ const menuItems = [
         name: "Explore the diversity of food",
         link: "/eat-and-drink",
       },
-      { name: "Traditional & Local Delicacies", link: "" },
+      { name: "Traditional & Local Delicacies", link: "/new-page-3" },
       { name: "Riverfront Scenes", link: "" },
       {
         name: "Unforgettable Experiences",
@@ -92,7 +92,7 @@ const menuItems = [
     dropdown: [
       {
         name: "Litreature",
-        link: "/products/laptops",
+        link: "/litreature",
       },
       { name: "Theaters", link: "" },
       { name: "Riverfront Scenes", link: "" },
@@ -102,7 +102,7 @@ const menuItems = [
       },
       { name: "Dance", link: "" },
       { name: "Music", link: "" },
-      { name: "Art Galleries", link: "" },
+      { name: "Art Galleries", link: "/art-galleries" },
     ],
   },
   {
@@ -111,7 +111,7 @@ const menuItems = [
     dropdown: [
       {
         name: " Accomodations and Stays",
-        link: "",
+        link: "/services-6-1",
       },
     ],
   },
@@ -184,13 +184,13 @@ export default function Header() {
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(index)}
               >
-                <div
+                <Link href={item.link}
                   className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
                     pathname === item.link ? "underline font-bold" : ""
                   }`}
                 >
                   {item.name}
-                </div>
+                </Link>
 
                 {item.dropdown && openDropdown === index && (
                   <div className="absolute left-0 bg-[#a4a09d] overflow-hidden text-white shadow-lg rounded-md z-10">

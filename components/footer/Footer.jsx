@@ -16,19 +16,16 @@ const Footer = () => {
           <FaInstagram size={18} className="text-white" />
         </Link>
         <div className="text-sm  mt-auto text-black">
-          Made with{" "}
-          <Link href="https://www.squarespace.com/" className="underline ">
-            Squarespace{" "}
-          </Link>{" "}
+        
           •{" "}
-          <Link href="https://www.squarespace.com/" className="underline ">
+          <Link href="" className="underline ">
             Privacy Policy{" "}
           </Link>
         </div>
       </div>
       <div className="text-base underline flex flex-col gap-5">
-        <Link href="">Heritage of the city</Link>
-        <Link href="">Fun activities</Link>
+        <Link href="/historic-city-of-ahmedabad-1">Heritage of the city</Link>
+        <Link href="/sports-and-games">Fun activities</Link>
       </div>
       <div className="text-base underline flex flex-col gap-5">
         <Link href="">ABOUT</Link>
