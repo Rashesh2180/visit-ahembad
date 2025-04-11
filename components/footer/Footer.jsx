@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="text-sm  mt-auto text-black">
         
           •{" "}
-          <Link href="" className="underline ">
+          <Link href="/privacy-policy" className="underline ">
             Privacy Policy{" "}
           </Link>
         </div>
@@ -28,8 +28,8 @@ const Footer = () => {
         <Link href="/sports-and-games">Fun activities</Link>
       </div>
       <div className="text-base underline flex flex-col gap-5">
-        <Link href="">ABOUT</Link>
-        <Link href="">CONTACT</Link>
+        <Link href="/about">ABOUT</Link>
+        <Link href="/contact">CONTACT</Link>
       </div>
       <div className="flex flex-col gap-5">
         <h6 className=" font-semibold text-xl text-black  mb-3">

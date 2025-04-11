@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 
@@ -14,11 +15,11 @@ const Category = ({data}) => {
             {
                 data?.data?.length > 0 && (
                     data?.data?.map(ele=>(
-                        <div key={ele?.id} className="flex flex-col gap-5 items-center text-black">
+                        <Link href={ele?.link} key={ele?.id} className="flex flex-col gap-5 items-center text-black">
                             <Image alt={ele?.title} src={ele?.img} height={96} width={96} className="sm:h-24 sm:w-24 h-16 w-16 " unoptimized />
                             <p className="text-center text-xl font-medium">{ele?.title}</p>
 
-                        </div>
+                        </Link>
                     ))
                 ) 
             }

@@ -9,6 +9,44 @@
     "explore": "explore",
     "exploreMore": "explore More"
   },
+  "about": {
+    "heading": "Visit Amdavad is your ultimate guide to exploring the vibrant and historic city of Ahmedabad. Whether you're a history enthusiast, a foodie, an art lover, or simply a traveller looking to experience the essence of Gujarat, this platform serves as a comprehensive resource to help you navigate the city with ease.",
+    "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738913030682-4RGJO0YXQ0NHJ0OKA6PL/Ahmedabad+heritage?format=2500w",
+    "title": "A Project by",
+    "title1": "Khushtar Heritage Collective",
+    "desc": "Visit Amdavad is an exciting new initiative launched by Khushtar Heritage Collective, designed to showcase the rich cultural and historical heritage of Ahmedabad, while promoting sustainable tourism. This one-stop platform aims to bridge the gap between visitors and the citys immense cultural, architectural, and artistic treasures."
+  },
+  "contact": {
+    "contact": {
+      "title": "Contact us",
+      "list1": "Do you have a comment or suggestion you’d like to share? ",
+      "email": "Email",
+      "link": "contact@email.com",
+      "list2": "For press inquiries, email us at",
+      "link2": "ress@email.com."
+    },
+    "work": {
+      "title": "Work with us",
+      "list1": "Thinking about joining us?",
+      "link": "View job openings."
+    },
+    "write": {
+      "title": "Write for us",
+      "list1": "We’re always looking for experienced, qualified wellness, beauty, and fitness  writers who share our beliefs. Interested? Send a few examples of your published stories:",
+      "link": "write@email.com"
+    },
+    "advertise": {
+      "title": "Advertise with us",
+      "list1": "Interested in advertising with us? Email us at",
+      "link": "sales@email.com"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy policy.",
+    "list1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "list2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. ",
+    "list3": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  },
   "header": {
     "login": "Login",
     "heading": "VISIT AMDAVAD",
@@ -288,7 +326,13 @@
         "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738140230845-YUP7GRYL49OH2VLV2A9R/unsplash-image-sUkDIlr2cAQ.jpg?format=750w",
         "link": "https://www.google.com/maps/place/Asopalav+Satelite/@23.0307581,72.4422404,12209m/data=!3m2!1e3!5s0x395e84cf5e7cc5fd:0xcfad5b02de63fe40!4m7!3m6!1s0x395e84cf5e882a5d:0xc07a1038f290115b!8m2!3d23.028125!4d72.5321348!15sCghBc29wYWxhdiIDiAEBWgoiCGFzb3BhbGF2kgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F1tfzvx0p!5m1!1e2?entry=tts&g_ep=EgoyMDI1MDEyOS4xIPu8ASoASAFQAw%3D%3D"
       }
-    ]
+    ],
+    "textTile":{
+      "title":"Ahmedabad textile industry",
+      "heading":"Ahmedabad: The Manchester of India",
+      "desc1":" Ahmedabad, often called the “Manchester of India”, has a rich textile legacy dating back to the 19th century under Brit rule. Its thriving cotton mills powered the city's economy, exporting garments globally. With access to the Sabarmati River, black cotton soil ideal for cotton farming, and affordable labor, Ahmedabad became a textile hub.",
+      "desc2":"Companies like Ashima Arvind Mills Ashima Group havedriven this growth, processing and finishing fabrics sourced even from places like Ichalkaranji, Maharashtra. The city’s proximity to the sea also makes exports seamless,cementing its role as a key player in India’s textile story."
+    }
   },
   "sportGames": {
     "title": "Ahmedabad Fitness Arena: Move, Sweat, Conquer!",
@@ -403,7 +447,7 @@
         {
           "id": 6,
           "title": "Dr. Vikram Sarabhai Space Museum",
-          "img": "",
+          "img": "https://i.pinimg.com/736x/2e/32/f7/2e32f7d186e9b10fea0ed1acd6eab3d5.jpg",
           "desc": "Located at the Space Applications Centre in Ahmedabad, is a tribute to India’s Father of the Space Program. This interactive museum showcases India’s advancements in space technology through satellite models, space applications, and captivating exhibits. Visitors can explore the history of ISRO, witness rocket prototypes, and even experience space science through engaging audio-visual presentations, making it a must-visit for science enthusiasts and space lovers.",
           "link": ""
         }
@@ -438,42 +482,50 @@
         {
           "id": 1,
           "title": "Museums",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/319e736f-bdb0-4a11-9033-c88a62a63288/museum.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/319e736f-bdb0-4a11-9033-c88a62a63288/museum.png?format=300w",
+          "link":"#"
         },
         {
           "id": 2,
           "title": "Monuments",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/9f4b9231-0b77-48a4-bb33-0a39b0fe7f70/monuments.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/9f4b9231-0b77-48a4-bb33-0a39b0fe7f70/monuments.png?format=300w",
+          "link":"/iconic-monuments"
         },
         {
           "id": 3,
           "title": "Theaters",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/862a8df9-941f-47ee-9217-e896eade5a42/theater.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/862a8df9-941f-47ee-9217-e896eade5a42/theater.png?format=300w",
+          "link":"#"
         },
         {
           "id": 4,
           "title": "Library",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/be410c2e-52ab-471c-8f94-2554c7bd48de/library.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/be410c2e-52ab-471c-8f94-2554c7bd48de/library.png?format=300w",
+          "link":"#"
         },
         {
           "id": 5,
           "title": "Religious places",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a0826c53-3c37-4b5a-82c5-7926821cd56e/pray.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a0826c53-3c37-4b5a-82c5-7926821cd56e/pray.png?format=300w",
+          "link":"/spirtituality"
         },
         {
           "id": 6,
           "title": "Stepwells",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/ce3b540b-3f74-410b-9db5-a3defbee92e7/stepwell.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/ce3b540b-3f74-410b-9db5-a3defbee92e7/stepwell.png?format=300w",
+          "link":"/traditional-stepwells"
         },
         {
           "id": 7,
           "title": "History",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/0a4a86b2-a70c-4f69-944f-ffefb04d4a49/history.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/0a4a86b2-a70c-4f69-944f-ffefb04d4a49/history.png?format=300w",
+          "link":"/historic-city-of-ahmedabad-1"
         },
         {
           "id": 8,
           "title": "Tours",
-          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1b41ece5-c7b0-4411-9f33-3c1e673b6b77/tours.png?format=300w"
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1b41ece5-c7b0-4411-9f33-3c1e673b6b77/tours.png?format=300w",
+          "link":"/sightseeing-in-and-around-the-ahmedabad"
         }
       ]
     }
@@ -765,20 +817,20 @@
         {
           "id": 1,
           "title": "Spirituality in Hinduism",
-          "img": "",
+          "img": "https://i.pinimg.com/736x/93/76/f4/9376f4b4c26430ed85b58ac708329866.jpg",
           "desc": ""
         },
         {
           "id": 2,
           "title": "Spirituality in Islam",
-          "img": "",
+          "img": "https://i.pinimg.com/736x/c9/ff/b9/c9ffb9b6f7bc3e922d1bb3aa82c1a799.jpg",
           "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
           "link": "https://www.sundarvan.org/"
         },
         {
           "id": 3,
           "title": "Spirituality in Jainism",
-          "img": "",
+          "img": "https://i.pinimg.com/736x/c1/91/85/c191858f329efae20956946e60aca9c8.jpg",
           "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
 
           "link": ""
@@ -988,6 +1040,21 @@
     },
     "imgBanner": {
       "title": "Whatever it is, the way you tell your story online can make all the difference."
+    },
+    "usefulOnformation": {
+      "title": "Useful information",
+      "data": [
+        {
+          "id": 1,
+          "title": "Where to say",
+          "img": "LuBedDouble"
+        },
+        { "id": 2, "title": "Public transport", "img": "SiTransportforlondon" },
+        { "id": 3, "title": "Travelling to London", "img": "CiPlane" },
+        { "id": 4, "title": "Sustainability", "img": "PiBicycleThin" },
+        { "id": 5, "title": "Oyster card", "img": "PiCreditCard" },
+        { "id": 6, "title": "Accessible London", "img": "FaAccessibleIcon" }
+      ]
     }
   },
   "shopping": {
