@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import { CartProvider } from "@/context/CartContext";
-
+import { Suspense } from 'react';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
+        <Suspense fallback={null}>
           <Header />
+        </Suspense>
           {children}
           <Footer />
         </CartProvider>
