@@ -31,7 +31,7 @@ const page = () => {
         <div className="grid gap-5 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1" >
           {accomodationData?.usefulOnformation?.data?.length > 0 &&
             accomodationData?.usefulOnformation?.data?.map((ele) => {
-              const IconComponent = iconMap[ele?.img] || LuIcons.LuAlertCircle;
+              const IconComponent = iconMap[ele?.img];
 
               return (
                 <div
