@@ -6,7 +6,7 @@ import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { LuFerrisWheel } from "react-icons/lu";
 const Feature = ({featureData}) => {
   return (
-    <div className="main-container py-32 ">
+    <div className="main-container sm:py-32 py-14 ">
       <h3 className="text-2xl font-semibold mb-5 text-black">
        {featureData?.title}
       </h3>

@@ -5,7 +5,7 @@ import { FaInstagram, FaShoppingCart, FaBars } from "react-icons/fa";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCart } from "../../context/CartContext";
 import jsonData from "../../public/assets/text/en.json";
-
+import BlurText from "@/animations/BlurText";
 export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [open, setOpen] = useState(false);
@@ -96,8 +96,14 @@ export default function Header() {
           ref={menuRef}
           onMouseLeave={handleMouseLeave}
         >
-          <Link href="/" className="text-center mb-3 text-5xl font-semibold">
-            {jsonData?.header?.heading || "-"}
+          <Link href="/" className=" mb-3 ">
+            <BlurText
+              text={jsonData?.header?.heading || "-"}
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-5xl font-semibold text-center"
+            />
           </Link>
 
           <div className="flex items-center gap-x-5 gap-y-3 flex-wrap justify-center">
@@ -296,16 +302,16 @@ export default function Header() {
               <>
                 <h2 className="text-2xl font-semibold mb-4">Create Account</h2>
                 <div className="mb-3 flex gap-3">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="w-full p-2 border flex-1"
-                />
                   <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="w-full p-2 border flex-1"
-                />
+                    type="text"
+                    placeholder="First Name"
+                    className="w-full p-2 border flex-1"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="w-full p-2 border flex-1"
+                  />
                 </div>
                 <input
                   type="email"
@@ -317,7 +323,7 @@ export default function Header() {
                   placeholder="Password"
                   className="w-full p-2 mb-5 border"
                 />
-                  <input
+                <input
                   type="password"
                   placeholder="Confirm Password"
                   className="w-full p-2 mb-5 border"
