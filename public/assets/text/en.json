@@ -7,7 +7,7 @@
     "startExploring": "Start Exploring",
     "makeIt": "Make It",
     "explore": "explore",
-    "exploreMore":"explore More"
+    "exploreMore": "explore More"
   },
   "header": {
     "login": "Login",
@@ -92,7 +92,7 @@
         "name": "Art and Culture",
         "link": "/products",
         "dropdown": [
-          { "name": "Literature", "link": "/literature" },
+          { "name": "Literature", "link": "/litreature" },
           { "name": "Theaters", "link": "" },
           { "name": "Riverfront Scenes", "link": "" },
           { "name": "Movies", "link": "" },
@@ -813,6 +813,258 @@
         }
       ]
     }
+  },
+  "food": {
+    "hero": {
+      "title": "Foodie things to do in Ahmedabad",
+      "data": [
+        {
+          "id": 1,
+          "title": "Morning Munchies",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737820280765-L6CTEI9FPNT79I3G0CZ8/unsplash-image-RWdMRDLAccs.jpg?format=500w",
+          "desc": ""
+        },
+        {
+          "id": 2,
+          "title": "Brunch Diaries",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737820348196-CZMUZAWQSBKKF1LFQSQ5/unsplash-image-HlNcigvUi4Q.jpg?format=500w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+          "link": "https://www.sundarvan.org/"
+        },
+        {
+          "id": 3,
+          "title": "Dinner Delicacies",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737820735829-5CUDI7Y2UJAMC8UWT5PX/unsplash-image-fb0_wj2MZk4.jpg?format=500w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+
+          "link": ""
+        },
+        {
+          "id": 4,
+          "title": "Traditional Tadka",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737820490979-5WGYS27O7KFQ48CX1SVN/unsplash-image-mlwXrYYAOms.jpg?format=500w",
+          "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.",
+
+          "link": ""
+        }
+      ]
+    },
+    "adeventure": {
+      "title": "Endure in the Culinary Adventure of the city",
+      "data": [
+        {
+          "id": 1,
+          "title": "Themed afternoon Teas",
+          "desc": "Delight in the picturesque landscapes and calm waters as you enjoy an exceptional cruising experience.",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1737829249882-4ZG9TRLW3T1ODOV7UKOL/unsplash-image-ni9SnKPgZtk.jpg?format=750w"
+        },
+        {
+          "id": 2,
+          "title": "Restaurants with a view",
+          "desc": "Take your pick from the variety of food options at the midnight food market",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/9e6664a8-36d1-485a-b841-f9246ca8a7f3/patang+night+view.png?format=500w"
+        },
+        {
+          "id": 3,
+          "title": "Local Fav",
+          "desc": "Explore the vibrancy of the streets of Sindhu Bhavan ",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/5481d19c-8713-4c25-8d35-ee0428719c3a/the+project+cafe.jpg?format=500w"
+        },
+        {
+          "id": 4,
+          "title": "the iconic Gujju",
+          "desc": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a75ff6a4-6cb1-44d2-9d59-5351c561bf11/swati+snacks.jpg?format=1000w",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/a75ff6a4-6cb1-44d2-9d59-5351c561bf11/swati+snacks.jpg?format=1000w"
+        }
+      ]
+    },
+    "foodCategory": {
+      "title": "Explore by Category",
+      "data": [
+        {
+          "id": 1,
+          "title": "Luxurious Dining",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/c7be5d49-77ff-4ca6-ab73-efef9c42aac5/restaurant.png?format=2500w"
+        },
+        {
+          "id": 2,
+          "title": "Cafe Hopping",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/aa69f3e5-9791-4b7b-a367-7acfb2960a1a/menu.png?format=2500w"
+        },
+        {
+          "id": 3,
+          "title": "Street Food",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/5c1dac81-87e9-4975-a8cd-7ac36e7fe77f/food-stall.png?format=2500w"
+        },
+        {
+          "id": 4,
+          "title": "Local Cusine",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/b5a5f857-7f91-4573-9323-f288857466d1/bibimbap.png?format=2500w"
+        },
+        {
+          "id": 5,
+          "title": "Midnight Munchings",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/e590aa9e-efd3-4871-b9da-8c9e725aef03/cutlery.png?format=2500w"
+        },
+        {
+          "id": 6,
+          "title": "Vegan Specials",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/06e55b9d-844d-4fad-bb5d-5baf20ced3ec/diet.png?format=2500w"
+        },
+        {
+          "id": 7,
+          "title": "Non - Veg Specials",
+          "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/06e55b9d-844d-4fad-bb5d-5baf20ced3ec/diet.png?format=2500w"
+        }
+      ]
+    }
+  },
+  "newPage3": {
+    "title": "Gujarati-themed luxuriously unique restaurants in Ahmedabad",
+    "data": [
+      {
+        "id": 1,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/0bd60f33-6091-472c-8e2c-2ba7a297b99d/house+of+mg+thali.jpg?format=500w",
+        "title": "House of MG - Agashiya",
+        "desc": "Offers a luxurious stay in a century-old mansion adorned with traditional architecture, vintage décor, and modern amenities. Renowned for its authentic Gujarati dining experiences, it beautifully blends cultural charm with contemporary comfort."
+      },
+      {
+        "id": 2,
+        "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/376c5da1-1e99-4b1e-b54e-8b53f8279274/rajwadu.jpg?format=500w",
+        "title": "Rajwadu",
+        "desc": "A heritage-themed restaurant in Ahmedabad, recreating the charm of a traditional Gujarati village with authentic cuisine, folk music, and cultural performances. Its serene ambiance and handcrafted decor offer a royal yet rustic dining experience."
+      },
+      {
+        "id": 3,
+        "img": "",
+        "title": "Gordhan Thal",
+        "desc": "Offers an authentic Gujarati thali experience with a lavish spread of traditional delicacies. Known for its warm hospitality and cultural ambience, it provides a true taste of Gujarat culinary heritage."
+      }
+    ]
+  },
+  "litreature": {
+    "hero": {
+      "title": "Litreature of the city",
+      "subTitle": "Ahmedabad, a city with a rich cultural and historical legacy, has been a significant hub for literature in Gujarat. From the medieval era, when Jain scholars and poets composed intricate manuscripts, to the modern literary movements that shaped Gujarati literature, the city has nurtured generations of writers, poets, and intellectuals. Renowned literary figures like Mahatma Gandhi, Umashankar Joshi, and Pannalal Patel have contributed to Ahmedabad’s literary heritage. The city's libraries, literary festivals, and publishing houses continue to uphold this legacy, making Ahmedabad a vibrant center for literary exploration and storytelling.",
+      "img": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738129904958-MACTDO4MA8TKUZUQ7C48/unsplash-image-eeSdJfLfx1A.jpg?format=1500w"
+    },
+    "data": [
+      {
+        "id": 1,
+        "title": "arthshila",
+        "img": ""
+      },
+      {
+        "id": 2,
+        "title": "Ahmedabad Management Association",
+        "img": ""
+      }
+    ]
+  },
+  "accomodation": {
+    "hero": {
+      "title": "Our Services",
+      "subTitle": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.",
+      "data": [
+        {
+          "id": 1,
+          "title": "Basic",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/59db377f-34a5-470c-aef0-c45630106587/AroHa_02.jpg?format=2500w",
+          "desc": "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique."
+        },
+        {
+          "id": 2,
+          "title": "Intermediate",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/12a36dab-dfec-4d85-b73b-1995071106fe/image-asset+%282%29.jpeg?format=2500w",
+          "desc": "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique."
+        },
+        {
+          "id": 3,
+          "title": "Advanced",
+          "img": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/5df416e3-4182-471e-8155-8f6d7fff0ef8/image-asset+%287%29.jpeg?format=2500w",
+          "desc": "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique."
+        }
+      ]
+    },
+    "imgBanner": {
+      "title": "Whatever it is, the way you tell your story online can make all the difference."
+    }
+  },
+  "shopping": {
+    "title": "Greatest hits",
+    "subHeading": "Discover everyone’s favorites for all things wellness.",
+    "tabs": ["all", "wellness", "beauty"],
+    "data": [
+      {
+        "id": 1,
+        "title": "Jade Roller",
+        "category": "beauty",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917769-4V2290PAV3M0T0J97PJI/image-asset.jpeg?format=750w",
+        "price": "20",
+        "desc": "This is a self care product. Designed to help you restore and regenerate. It is the ultimate in self care essentials.",
+        "features": ["BPA Free", "Domestically Assembled", "Cruelty Free"]
+      },
+      {
+        "id": 2,
+        "title": "Spice Cleanse Set",
+        "category": "wellness",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917780-O0PP4Q6D0GMVMK8CTZV1/Stocksy_comp_1995924.jpg?format=750w",
+        "price": "35",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."
+      },
+      {
+        "id": 3,
+        "title": "Magnesium+ Supplements",
+        "category": "wellness",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917804-LSTZQNVPC33UCF30OZXI/Stocksy_comp_1070346.jpg?format=750w",
+        "price": "38",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."
+      },
+      {
+        "id": 4,
+        "title": "Tea Tree Oil Serum",
+        "category": "beauty",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917839-ST9FJ0QKRSRBH4N6M9KO/image-asset.jpeg?format=750w",
+        "price": "32",
+        "desc": "This is a skin care product. Carefully formulated to hydrate and replenish. With essential vitamins and minerals to restore the vitality of your skin.",
+        "features": ["Organic", " Domestically Grown", "Cruelty Free"]
+      },
+      {
+        "id": 5,
+        "title": "Rose Infused Eye Cream",
+        "category": "wellness",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917848-HXXX3EBHPL6O9P2WHIY9/Stocksy_comp_3166128.jpg?format=750w",
+        "price": "24",
+        "desc": "This is a skin care product. Carefully formulated to hydrate and replenish. With essential vitamins and minerals to restore the vitality of your skin.",
+        "features": ["Organic", " Domestically Grown", "Cruelty Free"]
+      },
+      {
+        "id": 6,
+        "title": "Soap Making Kits",
+        "category": "beauty",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917865-57BN1K40CJE55M7O6HLN/Stocksy_comp_1491938.jpg?format=750w",
+        "price": "18",
+        "desc": "This is a self care product. Designed to help you restore and regenerate. It is the ultimate in self care essentials.",
+        "features": [""]
+      },
+      {
+        "id": 7,
+        "title": "Sunflower Seed Cleansing Oil",
+        "category": "beauty",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1649102917884-JX3II521WZ8AR0VEOQ11/Stocksy_comp_2136274.jpg?format=750w",
+        "desc": "This is a skin care product. Carefully formulated to hydrate and replenish. With essential vitamins and minerals to restore the vitality of your skin.",
+        "price": "43",
+        "features": ["Organic", " Domestically Grown", "Cruelty Free"]
+      },
+      {
+        "id": 8,
+        "title": "matcha set",
+        "category": "wellness",
+        "img": "https://images.squarespace-cdn.com/content/v1/624b5039a374f73b681f7e5a/1650022648045-G5KRF4M1STFJ0HQAGNFY/Stocksy_comp_2406227.jpeg?format=750w",
+        "price": "43",
+        "desc": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. "
+      }
+    ]
   },
 
   "footer": {

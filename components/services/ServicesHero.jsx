@@ -1,37 +1,16 @@
 import Image from "next/image";
 import React from "react";
 
-const data = [
-  {
-    id: 1,
-    title: "Basic",
-    img: "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/59db377f-34a5-470c-aef0-c45630106587/AroHa_02.jpg?format=2500w",
-    desc: "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique.",
-  },
-  {
-    id: 2,
-    title: "Intermediate",
-    img: "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/12a36dab-dfec-4d85-b73b-1995071106fe/image-asset+%282%29.jpeg?format=2500w",
-    desc: "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique.",
-  },
-  {
-    id: 3,
-    title: "Advanced",
-    img: "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/5df416e3-4182-471e-8155-8f6d7fff0ef8/image-asset+%287%29.jpeg?format=2500w",
-    desc: "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique.",
-  },
- 
-];
 
-const ServicesHero = () => {
+const ServicesHero = ({data}) => {
   return (
     <section className="sm:py-32 py-10 bg-[#F1FFE0]">
       <div className="main-container">
-        <h2 className="section-title mb-5">Our Services</h2>
-         <p className="sm:mb-16 mb-8 text-base text-black max-w-3xl">It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. </p>
-        {data.length > 0 && (
+        <h2 className="section-title mb-5">{data?.title}</h2>
+         <p className="sm:mb-16 mb-8 text-base text-black max-w-3xl">{data?.subTitle} </p>
+        {data?.data?.length > 0 && (
           <div className="grid xl:gap-12 gap-8 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-            {data.map((ele) => (
+            {data?.data?.map((ele) => (
               <div
                 className="h-full w-full flex flex-col items-start gap-5"
                 key={ele.id}

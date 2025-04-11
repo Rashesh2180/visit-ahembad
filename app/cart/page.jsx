@@ -1,7 +1,7 @@
-"use client"; // Add this directive
+"use client"; 
 
 import Image from "next/image";
-import { FaTrashAlt } from "react-icons/fa"; // Import trash icon
+import { FaTrashAlt } from "react-icons/fa";
 import { useCart } from "../../context/CartContext";
 
 const CartPage = () => {
