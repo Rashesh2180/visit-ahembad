@@ -1,8 +1,23 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import ScrollVelocity from "../../animations/ScrollVelocity ";
 import PixelTransition from "../../animations/PixelTransition";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 const HeritageCity = ({ heritageData }) => {
+  const x = useMotionValue(200);
+  const y = useMotionValue(200);
+
+  const rotateX = useTransform(y, [0, 400], [45, -45]);
+  const rotateY = useTransform(x, [0, 400], [-45, 45]);
+
+  function handleMouse(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+
+    x.set(event.clientX - rect.left);
+    y.set(event.clientY - rect.top);
+  }
+
   return (
     <div className="main-container pt-5 pb-24">
       <div className="scroll-container mb-2">
@@ -60,16 +75,27 @@ const HeritageCity = ({ heritageData }) => {
           />
         </div>
         <div className="flex-1 bg-[#F8DDDD]  p-4  rounded-xl min-w-[320px] max-md:py-14  flex gap-5 items-center justify-center">
-          <Image
-            src={
-              "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/54df9ab8-bc58-4b50-a4c1-67a0b0e8f50a/Heart_Shape_PNG_Clipart-3166.png?format=500w"
-            }
-            alt=""
-            unoptimized
-            height={113}
-            width={125}
-            className="max-xl:w-20 max-xl:h-20 max-sm:h-10 max-sm:w-10"
-          />
+          <motion.div onMouseMove={handleMouse}>
+            <motion.div style=
+              {{
+              rotateX,rotateY
+                
+              }}>
+              
+              <Image style={{rotateX,
+                rotateY,}}
+                src={
+                  "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/54df9ab8-bc58-4b50-a4c1-67a0b0e8f50a/Heart_Shape_PNG_Clipart-3166.png?format=500w"
+                }
+                alt=""
+                unoptimized
+                
+                height={113}
+                width={125}
+                className="max-xl:w-20 max-xl:h-20 max-sm:h-10 max-sm:w-10"
+              />
+            </motion.div>
+          </motion.div>
           <span className="lg:text-3xl text-2xl max-w-84 text-black font-semibold">
             {heritageData?.card3}
           </span>

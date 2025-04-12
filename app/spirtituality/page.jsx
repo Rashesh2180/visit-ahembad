@@ -1,3 +1,4 @@
+"use client"
 import ImageBanner from "@/components/imagebanner/ImageBanner";
 import OneDayTour from "@/components/spirtituality/OneDayTour";
 import SpirtitualityHero from "@/components/spirtituality/SpirtitualityHero";
