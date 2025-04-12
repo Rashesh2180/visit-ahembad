@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FadeContent from "../../animations/FadeContent";
 
 const Events = ({ eventData }) => {
   return (
     <section className="md:py-32 py-20 bg-black ">
+        <FadeContent
+        blur={true}
+        duration={1000}
+        easing="ease-out"
+        initialOpacity={0}
+      >
       <div className="main-container ">
         <h6 className="section-title uppercase  mb-10 !text-white">
           {eventData?.title}
@@ -70,6 +77,7 @@ const Events = ({ eventData }) => {
           </Link>
         </div>
       </div>
+      </FadeContent>
     </section>
   );
 };

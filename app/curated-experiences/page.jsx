@@ -3,6 +3,7 @@ import CuratedHero from '@/components/curated-experiences/CuratedHero'
 import MakeIt from '@/components/curated-experiences/MakeIt'
 import jsonData from "../../public/assets/text/en.json";
 
+
 const page = () => {
 
   const data = jsonData?.curated

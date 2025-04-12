@@ -5,6 +5,7 @@ const History1 = ({data}) => {
   return (
     <div>
         <Hero data={data}/>
+        
       
     </div>
   )

@@ -1,3 +1,4 @@
+"use client"
 import ImageBanner from "@/components/imagebanner/ImageBanner";
 import Well from "@/components/stepwall/Well";
 import React from "react";

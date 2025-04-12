@@ -8,7 +8,7 @@ import { Pagination, Navigation, A11y } from "swiper/modules";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import jsonData from "../../public/assets/text/en.json";
-
+import ShinyText from "../../animations/ShinyText";
 const shoppingData = jsonData?.goShopping;
 
 const GoShoppingPage = () => {
@@ -68,7 +68,7 @@ const GoShoppingPage = () => {
                   <a
                     target="_blank"
                     href={ele.link}
-                    className="p-3 mx-auto mt-auto bg-black text-white text-sm text-center font-semibold cursor-pointer inline-block"
+                    className="p-3 mx-auto mt-auto bg-black border border-black rounded-lg hover:bg-white hover:text-black text-white text-sm text-center font-semibold cursor-pointer inline-block"
                   >
                     {jsonData?.general?.visitNow}
                   </a>

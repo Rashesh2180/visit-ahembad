@@ -4,6 +4,7 @@ import React from "react";
 import Button from "../button/Button";
 
 const MakeIt = ({ data,generalText }) => {
+  
   return (
     <section className="sm:py-32 py-10 bg-black text-white">
       <div className="main-container">

@@ -1,21 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedContent from "../../animations/AnimatedContent ";
+import FadeContent from "../../animations/FadeContent";
 const MustSeePlace = ({ mustSeedata }) => {
   return (
     <section className=" py-20 bg-black ">
       <div className="main-container overflow-x-hidden">
-        <AnimatedContent
-          distance={150}
-          direction="horizontal"
-          reverse={false}
-          config={{ tension: 80, friction: 20 }}
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-        >
+      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
           <div className="">
             <h6 className="section-title sm:mb-20 mb-8 !text-white">
               {mustSeedata?.title}
@@ -68,7 +59,7 @@ const MustSeePlace = ({ mustSeedata }) => {
               </div>
             </div>
           </div>
-        </AnimatedContent>
+          </FadeContent>
       </div>
     </section>
   );

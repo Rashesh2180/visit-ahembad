@@ -1,3 +1,4 @@
+"use client"
 import Category from "@/components/historyCity1/Category";
 import HistorySubscribe from "@/components/historyCity1/HistorySubscribe";
 import ImageGallery from "@/components/historyCity1/ImageGallery";

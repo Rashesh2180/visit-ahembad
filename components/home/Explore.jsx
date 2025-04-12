@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import AnimatedContent from "../../animations/AnimatedContent ";
+import FadeContent from "../../animations/FadeContent";
 
 const Explore = ({ exploreData }) => {
   return (
@@ -10,18 +10,14 @@ const Explore = ({ exploreData }) => {
       </h6>
       <div className="bg-[#5B767B] w-full sm:py-32 py-14">
         <div className="main-container overflow-x-hidden">
-          <AnimatedContent
-            distance={150}
-            direction="horizontal"
-            reverse={false}
-            config={{ tension: 80, friction: 20 }}
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
+          <FadeContent
+            blur={true}
+            duration={1000}
+            easing="ease-out"
+            initialOpacity={0}
           >
             <div className="flex flex-wrap gap-5 ">
-              <div className="relative flex-1 min-w-2xs ">
+              <div className="relative flex-1 min-w-2xs">
                 <Image
                   src={
                     "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/6faa3a0c-fe7e-406c-a4e1-73a24548d03c/Thol_lake_02.jpeg?format=1500w"
@@ -67,7 +63,7 @@ const Explore = ({ exploreData }) => {
                 </h6>
               </div>
             </div>
-          </AnimatedContent>
+          </FadeContent>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+"use client"
 import AhemdbadBanner from "@/components/ahmedabad/AhemdbadBanner";
 import KidsPlaces from "@/components/ahmedabad/KidsPlaces";
 import LearningActivites from "@/components/ahmedabad/LearningActivites";

@@ -5,7 +5,7 @@ import { FaInstagram, FaShoppingCart, FaBars } from "react-icons/fa";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCart } from "../../context/CartContext";
 import jsonData from "../../public/assets/text/en.json";
-import BlurText from "@/animations/BlurText";
+import SplitText from "@/animations/SplitText";
 export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [open, setOpen] = useState(false);
@@ -97,12 +97,22 @@ export default function Header() {
           onMouseLeave={handleMouseLeave}
         >
           <Link href="/" className=" mb-3 ">
-            <BlurText
+            {/* <BlurText
               text={jsonData?.header?.heading || "-"}
               delay={150}
               animateBy="words"
               direction="top"
               className="text-5xl font-semibold text-center"
+            /> */}
+            <SplitText
+                text={jsonData?.header?.heading || "-"}
+              className="text-5xl font-semibold text-center"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
             />
           </Link>
 

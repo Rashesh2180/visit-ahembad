@@ -1,10 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
-const KidsPlaces = ({data}) => {
+const KidsPlaces = ({ data }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
   return (
     <section className="sm:py-32 py-10">
       <div className="main-container">
@@ -12,11 +34,19 @@ const KidsPlaces = ({data}) => {
           {data?.title}
         </h6>
         {data?.data?.length > 0 && (
-          <div className="grid xl:gap-12 gap-8  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            ref={ref}
+            animate={isInView ? "visible" : "hidden"}
+            className="grid xl:gap-12 gap-8  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1"
+          >
             {data?.data?.map((ele) => (
-              <div
+              <motion.div
                 className="h-full w-full flex flex-col items-start gap-5"
                 key={ele.id}
+                variants={cardVariants}
+
               >
                 <Image
                   src={
@@ -45,9 +75,9 @@ const KidsPlaces = ({data}) => {
                 >
                   Learn More
                 </a>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
     </section>

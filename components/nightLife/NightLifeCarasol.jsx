@@ -12,7 +12,7 @@ const NightLifeCarasol = ({ nightPlace }) => {
   const [swiperRef, setSwiperRef] = useState(null);
   return (
     <section className="sm:pb-24 pb-14">
-      <h6 className="text-center py-14 section-title">
+      <h6 className="text-center sm:py-14 py-7 section-title">
         {nightPlace?.title}
       </h6>
       <div className="flex sm:gap-8 gap-3 items-center justify-start main-container">

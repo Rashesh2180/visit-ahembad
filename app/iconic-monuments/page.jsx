@@ -1,3 +1,4 @@
+"use client"
 import IconicDualSection from '@/components/iconic-monuments/IconicDualSection'
 import IconicGallery from '@/components/iconic-monuments/IconicGallery'
 import ImageBanner from '@/components/iconic-monuments/ImageBanner'
@@ -8,7 +9,7 @@ const page = () => {
   const iconicData = jsonData?.iconic
   return (
     <div>
-      <ImageBanner title={iconicData?.title}/>
+      <ImageBanner title={iconicData?.heroTitle}/>
       <IconicDualSection  data={iconicData?.fortDeatail}/>
       <IconicGallery data={iconicData?.galleryData}/>
     </div>
