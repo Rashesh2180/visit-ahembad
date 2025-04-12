@@ -1,14 +1,14 @@
-import Image from "next/image";
+"use client"
 import React from "react";
-
+import RollingGallery from '@/animations/RollingGallery'
 const page = () => {
   return (
     <section className="bg-[#F1FFE0] sm:py-14 py-10">
-      <div className="main-container flex  sm:gap-8 gap-5 lg:w-[80%]">
+      {/* <div className="main-container flex  sm:gap-8 gap-5 lg:w-[80%]">
         <div className="flex-1 flex flex-col sm:gap-10 gap-5">
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847733469-ZUCJB9XJMBYPFUY56TKA/20140301_Trade-151_0124-copy.jpg?format=1500w"
+              ""
             }
             alt=""
             width={400}
@@ -18,7 +18,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847733251-RBMKZJPZSVYWAZLWQ1U8/AroHa_02.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -28,7 +28,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847732989-Z69Q9QA468G3C0O3CY30/Aro+Ha_0428.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -38,7 +38,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847731939-IPGT5M4PEUD5P45B5TG4/Aro+Ha_0010.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -48,7 +48,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847773654-BPUX4PIGN1XNMO6RYA8F/Large%2BJPG-Aro%2BHa_0393.jpg?format=1500w"
+              ""
             }
             alt=""
             width={400}
@@ -60,7 +60,7 @@ const page = () => {
         <div className="flex-1 flex flex-col sm:gap-10 gap-5">
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847733469-ZUCJB9XJMBYPFUY56TKA/20140301_Trade-151_0124-copy.jpg?format=1500w"
+              ""
             }
             alt=""
             width={400}
@@ -70,7 +70,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847733251-RBMKZJPZSVYWAZLWQ1U8/AroHa_02.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -80,7 +80,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847732989-Z69Q9QA468G3C0O3CY30/Aro+Ha_0428.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -90,7 +90,7 @@ const page = () => {
           />
           <Image
             src={
-              "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847731939-IPGT5M4PEUD5P45B5TG4/Aro+Ha_0010.jpg?format=1000w"
+              ""
             }
             alt=""
             width={400}
@@ -100,6 +100,9 @@ const page = () => {
           />
        
         </div>
+      </div> */}
+      <div className="main-container">
+        <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
     </section>
   );

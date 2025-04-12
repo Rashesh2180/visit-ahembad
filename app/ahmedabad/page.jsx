@@ -1,13 +1,12 @@
-import Ahmedabad from '@/pages/ahmedabad/Ahmedabad'
-import React from 'react'
+import Ahmedabad from "@/pages/ahmedabad/Ahmedabad";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-        <Ahmedabad/>
-      
+      <Ahmedabad />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
