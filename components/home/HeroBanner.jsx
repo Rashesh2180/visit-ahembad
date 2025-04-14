@@ -23,7 +23,7 @@ const HeroBanner = ({ heroData }) => {
           showTooltip={true}
           displayOverlayContent={true}
           overlayContent={
-            <p className="tilted-card-demo-text max-w-2xl mx-auto absolute top-14 sm:left-24 left-5 sm:text-7xl text-5xl font-semibold">
+            <p className="tilted-card-demo-text max-w-2xl text-white mx-auto absolute top-14 sm:left-24 left-5 sm:text-7xl text-5xl font-semibold">
               {heroData?.title}
             </p>
           }

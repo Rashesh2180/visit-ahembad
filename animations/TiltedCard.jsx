@@ -75,7 +75,7 @@ export default function TiltedCard({
   return (
     <figure
       ref={ref}
-      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
+      className="relative w-full text-white h-full [perspective:800px] flex flex-col items-center justify-center"
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -85,7 +85,7 @@ export default function TiltedCard({
       onMouseLeave={handleMouseLeave}
     >
       {showMobileWarning && (
-        <div className="absolute top-4 text-center text-sm block sm:hidden">
+        <div className="absolute top-4 text-white text-center text-sm block sm:hidden">
           This effect is not optimized for mobile. Check on desktop.
         </div>
       )}
@@ -112,7 +112,7 @@ export default function TiltedCard({
 
         {displayOverlayContent && overlayContent && (
           <motion.div
-            className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]"
+            className="absolute top-0 left-0 text-white z-[2] will-change-transform [transform:translateZ(30px)]"
           >
             {overlayContent}
           </motion.div>
@@ -121,7 +121,7 @@ export default function TiltedCard({
 
       {showTooltip && (
         <motion.figcaption
-          className="pointer-events-none absolute left-10 top-10 rounded-[4px] bg-white px-[10px] text-3xl text-[#2d2d2d] opacity-0 z-[3] hidden sm:block"
+          className="pointer-events-none absolute left-10 top-10 rounded-[4px] bg-white px-[10px] text-3xl text-white opacity-0 z-[3] hidden sm:block"
           style={{
             x,
             y,
