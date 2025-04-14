@@ -128,7 +128,7 @@
       },
       {
         "name": "Art and Culture",
-        "link": "/products",
+        "link": "",
         "dropdown": [
           { "name": "Literature", "link": "/litreature" },
           { "name": "Theaters", "link": "" },

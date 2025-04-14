@@ -77,6 +77,10 @@ export default function Header() {
       document.removeEventListener("keydown", handleEscape);
     };
   }, [loginModalOpen]);
+  useEffect(() => {
+    setOpen(false);
+    setOpenDropdown(null);
+  }, [pathname]);
 
   const menuItems = jsonData?.header?.menuItems || [];
 
@@ -105,7 +109,7 @@ export default function Header() {
               className="text-5xl font-semibold text-center"
             /> */}
             <SplitText
-                text={jsonData?.header?.heading || "-"}
+              text={jsonData?.header?.heading || "-"}
               className="text-5xl font-semibold text-center"
               delay={150}
               animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
@@ -123,14 +127,24 @@ export default function Header() {
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(index)}
               >
-                <Link
-                  href={item.link}
-                  className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
-                    pathname === item.link ? "underline font-bold" : ""
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                {item?.name === "SHOP" ? (
+                  <Link
+                    href={item?.link}
+                    className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
+                      pathname === item.link ? "underline font-bold" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <div
+                    className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
+                      pathname === item.link ? "underline font-bold" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </div>
+                )}
 
                 {item.dropdown && openDropdown === index && (
                   <div className="absolute left-0 bg-[#a4a09d] overflow-hidden text-white shadow-lg rounded-md z-10">
@@ -173,14 +187,24 @@ export default function Header() {
                   className="relative"
                   onMouseEnter={() => handleMouseEnter(index)}
                 >
-                  <Link
-                    href={item.link}
-                    className={`px-3 py-2 text-lg font-medium rounded mb-2 ${
-                      pathname === item.link ? "underline font-bold" : ""
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+                  {item?.name === "SHOP" ? (
+                    <Link
+                      href={item?.link}
+                      className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
+                        pathname === item.link ? "underline font-bold" : ""
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <div
+                      className={`px-3 py-2 text-lg font-medium rounded mb-2 cursor-pointer ${
+                        pathname === item.link ? "underline font-bold" : ""
+                      }`}
+                    >
+                      {item.name}
+                    </div>
+                  )}
 
                   {item.dropdown && openDropdown === index && (
                     <div className="absolute left-0 bg-[#a4a09d] text-white shadow-lg rounded-md z-10">
