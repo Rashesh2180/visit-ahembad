@@ -246,61 +246,61 @@
           "id": 1,
           "title": "Dinner night outs",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429572549-QSUMUELEYUGZ6A4155Z6/unsplash-image-TSS-1aqoRXE.jpg?format=500w",
-          "height": 400
+          "height": 600
         },
         {
           "id": 2,
           "title": "Fun parks and Games ",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429463425-Y0SUGFEH7R4PJ2WO7X0W/unsplash-image-u-s3EG1QUXw.jpg?format=500w",
-          "height": 300
+          "height": 500
         },
         {
           "id": 3,
           "title": "Bowling alleys",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429598282-VYSTYJML0BDG14QBBCLV/unsplash-image-TS2_PvGhGgs.jpg?format=500w",
-          "height": 300
+          "height": 600
         },
         {
           "id": 4,
           "title": "Escape rooms",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429657015-4U5R0HL7DSZMD38B5MP8/unsplash-image-OmaFZNYOy6E.jpg?format=500w",
-          "height": 300
+          "height": 500
         },
         {
           "id": 5,
           "title": "Board games night",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429682048-QJ6OADK582EEZJ3WU31D/unsplash-image-w7eaCH6ShR4.jpg?format=500w",
-          "height": 300
+          "height": 600
         },
         {
           "id": 6,
           "title": "Open mic",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429730566-1XBOEEFFNFLKKH2CIH7N/unsplash-image-LETdkk7wHQk.jpg?format=500w",
-          "height": 300
+          "height": 600
         },
         {
           "id": 7,
           "title": "Stand Up Comedy",
           "image": "https://images.squarespace-cdn.com/content/v1/677acead59bfdf1eac35b1fe/1738429763845-Z1LLPJ99K6KYFGHSMVI7/unsplash-image-jvNoSUrQkgU.jpg?format=500w",
-          "height": 200
+          "height": 500
         },
         {
           "id": 8,
           "image": "https://blog.lemontreehotels.com/wp-content/uploads/2018/09/Sabarmati-Riverfront-night-hangout-places-in-ahmedabad.jpg",
-          "height": 300,
+          "height": 600,
           "title":"RiverFront"
         },
         {
           "id": 9,
           "image": "https://img.etimg.com/thumb/msid-65805045,width-640,height-480,imgsize-349420,resizemode-4/aquatics-gallery.jpg",
-          "height": 200,
+          "height": 500,
           "title":"Science City"
 
         },
         {
           "id": 10,
           "image": "https://www.treebo.com/blog/wp-content/uploads/2018/02/Rewind-the-Disc.jpg",
-          "height": 400,
+          "height": 600,
           "title":"Night club"
 
         }
