@@ -29,9 +29,14 @@ const RollingGallery = ({
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(
     window.innerWidth <= 640
   );
+
   useEffect(() => {
-    const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
     if (typeof window !== "undefined") {
+      const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
+
+      // Set the initial value
+      handleResize();
+
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
