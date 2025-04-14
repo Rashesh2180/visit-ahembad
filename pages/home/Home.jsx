@@ -7,6 +7,7 @@ import LocationMap from "@/components/home/LocationMap";
 import MustSeePlace from "@/components/home/MustSeePlace";
 import React from "react";
 import jsonData from "../../public/assets/text/en.json";
+import VisitCity from "../../components/home/VisitCity";
 const HomePage = () => {
   const homeData = jsonData?.home;
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HeroBanner heroData={homeData?.hero} />
       <HeritageCity heritageData={homeData?.heritageCity} />
       <MustSeePlace mustSeedata={homeData?.mustSee} />
+      <VisitCity/>
       <Explore exploreData={homeData?.explore} />
       <Featurre featureData={homeData?.feature} />
       <GreenGreeting
