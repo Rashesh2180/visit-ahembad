@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from "react";
 import {
   motion,
@@ -27,16 +26,13 @@ const RollingGallery = ({
   images = images.length > 0 ? images : IMGS;
 
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(
-    window.innerWidth <= 640
+    false
   );
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
-
-      // Set the initial value
-      handleResize();
-
+      handleResize(); // Set initial state
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }

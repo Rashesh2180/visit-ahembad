@@ -35,9 +35,9 @@ const Products = ({data}) => {
         </p>
 
         <div className="flex gap-4 mb-10 justify-center">
-          {categories.map((category) => (
+          {categories.map((category,ind) => (
             <button
-              key={category}
+              key={ind}
               onClick={() => setActiveTab(category)}
               className={`px-5 py-2 rounded-full capitalize cursor-pointer
                 ${

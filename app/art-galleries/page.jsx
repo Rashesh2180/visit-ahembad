@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import RollingGallery from "@/animations/RollingGallery";
 const page = () => {
