@@ -4,10 +4,9 @@ import { useEffect, useState } from "react";
 import { useCart } from "../../../context/CartContext";
 import Image from "next/image";
 import jsonData from "../../../public/assets/text/en.json";
-
+import { motion } from "framer-motion"; // ✅ Import framer-motion
 
 const data = jsonData?.shopping?.data;
-
 
 const ProductDetail = () => {
   const { productName } = useParams();
@@ -39,26 +38,52 @@ const ProductDetail = () => {
     return <div className="p-10 text-center">Product not found.</div>;
 
   return (
-    <section className="sm:py-20 py-10 bg-[#EFEBFA]">
-      <div className="flex items-center sm:mb-14 mb-7 main-container flex-wrap">
+    <motion.section
+      className="sm:py-20 py-10 bg-[#EFEBFA]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="flex items-center sm:mb-14 mb-7 main-container flex-wrap"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+      >
         <h2 className="text-3xl font-bold text-black">Shop:- </h2>
         <h3 className="text-2xl font-semibold text-black">{product.title}</h3>
-      </div>
+      </motion.div>
+
       <div className="main-container flex lg:gap-16 gap-8 max-md:flex-col items-center">
-        <Image
-          src={product.img}
-          alt={product.title}
-          width={600}
-          height={400}
-          unoptimized
-          className="rounded-2xl object-cover flex-1 md:max-h-[500px] max-h-[300px] w-full"
-        />
-        <div className="flex-1">
-          <h2 className="text-black sm:mb-8 mb-4 sm:text-4xl text-2xl font-semibold">{product.title}</h2>
-          <p className="text-xl text-black mb-4">Price: <span className="font-semibold">₹{product.price}.00</span></p>
-          <p className="text-base text-gray-700 mb-6">
-           {product.desc}
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="flex-1"
+        >
+          <Image
+            src={product.img}
+            alt={product.title}
+            width={600}
+            height={400}
+            unoptimized
+            className="rounded-2xl object-cover md:max-h-[500px] max-h-[300px] w-full"
+          />
+        </motion.div>
+
+        <motion.div
+          className="flex-1"
+          initial={{ x: 50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          <h2 className="text-black sm:mb-8 mb-4 sm:text-4xl text-2xl font-semibold">
+            {product.title}
+          </h2>
+          <p className="text-xl text-black mb-4">
+            Price: <span className="font-semibold">₹{product.price}.00</span>
           </p>
+          <p className="text-base text-gray-700 mb-6">{product.desc}</p>
 
           <div className="flex items-center gap-4 mb-8 max-sm:justify-end">
             <span className="font-semibold text-lg text-black">Quantity:</span>
@@ -79,9 +104,11 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          <button
+          <motion.button
             onClick={handleAddToCart}
             disabled={loading}
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
             className="bg-black text-white hover:bg-white max-sm:ml-auto hover:text-black border border-black cursor-pointer px-6 py-3 rounded-full flex items-center gap-3"
           >
             {loading ? (
@@ -89,10 +116,10 @@ const ProductDetail = () => {
             ) : (
               "Add to Cart"
             )}
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
